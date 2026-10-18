@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-18",
+  "type": "Verificação editorial e estrutural; não é aprovação científica",
+  "argumentative_paragraphs": 18,
+  "paragraphs_with_ABCD_and_indirect_citation": 18,
+  "source_ids": [
+    "R2024",
+    "S2026"
+  ],
+  "full_pdf_pages_read": {
+    "R2024": 59,
+    "S2026": 15
+  },
+  "source_versions": "R2024 publicada; S2026 manuscrito dos autores arXiv v1",
+  "specific_objectives": 2,
+  "docx_pages": 11,
+  "toc_pages": {
+    "intro": 4,
+    "obj": 4,
+    "geral": 4,
+    "especificos": 4,
+    "metodo": 5,
+    "teoria": 6,
+    "fim": 8,
+    "refs": 9,
+    "apendice": 10,
+    "anexos": 11
+  },
+  "visual_inspection": "Todas as 11 páginas renderizadas foram inspecionadas; não há página vazia, corte ou sobreposição. Parágrafos mantidos inteiros.",
+  "document_sha256": "7997451843c8ecfcd569e68b1cc9cb6895a92dde024eeba3026a6c65185185a2",
+  "excluded_active_sources": [
+    "Johannesson e Perjons (2021)",
+    "Lu e Alexandru (2023)",
+    "Yusuf e Noor (2023)"
+  ],
+  "limits": [
+    "Revisão humana pendente",
+    "Versão final ACM de S2026 não comparada integralmente",
+    "Divergências numéricas das fontes registradas e não reproduzidas na entrega",
+    "Sem coleta com pessoas; sem efeito educacional ou comercial demonstrado",
+    "Capas, títulos, referências e tabelas de registros não constituem argumentação bibliográfica"
+  ],
+  "issues_closed": []
+}

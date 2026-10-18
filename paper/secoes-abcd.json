@@ -1,0 +1,50 @@
+{
+  "introducao": [
+    "Relacionar diferentes formas de apresentar um conteúdo é uma questão relevante para o desenvolvimento desta ferramenta. Rexigel et al. (2024, p. 48) destacam o apoio para conectar representações. Neste Projeto Integrador, representação significa uma forma de mostrar o mesmo exemplo: desenho da conta, instruções em Java e valores registrados. A reunião dessas partes orienta a proposta, cuja utilidade educacional ainda precisa ser investigada.",
+    "A pergunta do projeto é como apresentar e conferir a relação entre instruções e mudanças nos dados de contas fictícias. Sibia et al. (2026, p. 8) observaram o uso combinado de código e memória. Aqui, uma conta começa com 100, recebe 25 e passa a 125; outra conta deve manter 20. Esse exemplo delimita a demonstração técnica, sem transferir ao nosso programa os resultados daquele estudo.",
+    "O alcance do trabalho depende do tipo de evidência disponível. Sibia et al. (2026, p. 12) distinguem investigar o uso de visualizações de medir desempenho. No projeto, existem registros de testes do programa, mas não houve coleta com estudantes. Portanto, as conclusões desta versão tratam do funcionamento demonstrado e das perguntas ainda abertas."
+  ],
+  "objetivo_geral": "Desenvolver e verificar uma ferramenta que relacione instruções Java e dados de contas de exemplo. Rexigel et al. (2024, p. 48) apontam a importância de apoio entre representações. Essa orientação será aplicada à apresentação conjunta do desenho, das instruções e dos valores. O objetivo abrange construir e conferir o recurso; não inclui comprovar aprendizagem nesta etapa.",
+  "objetivos_especificos": [
+    "Relacionar a literatura selecionada às escolhas de apresentação da ferramenta. Rexigel et al. (2024, p. 49) ressaltam limites de generalização entre contextos. Cada escolha será associada a uma fonte lida integralmente e ao trecho pertinente. Essa relação deverá sustentar a justificativa sem transformar resultados externos em resultados próprios.",
+    "Implementar e testar situações de alteração e compartilhamento de dados, preservando os registros. Sibia et al. (2026, p. 5) apresentam visualizações de valores e referências a objetos. Aqui, serão conferidos saldos independentes e dois nomes que acessam a mesma conta. Esses testes verificarão o exemplo implementado; a avaliação com pessoas permanecerá uma etapa distinta."
+  ],
+  "metodologia": [
+    "A seleção bibliográfica foi orientada pela correspondência entre a fonte e o argumento que ela sustenta. Rexigel et al. (2024, p. 49) alertam para a dependência dos resultados em relação ao contexto. Entre as cinco referências anteriores, foram mantidas duas após leitura completa: o artigo publicado de 2024 e a versão dos autores de 2026. O registro de leitura identifica versões, páginas e exclusões; esta seleção exploratória não constitui revisão sistemática.",
+    "A construção do exemplo adotou operações cujos efeitos podem ser acompanhados e conferidos. Sibia et al. (2026, p. 7) utilizam tarefas de acompanhamento e explicação de operações. No nosso procedimento técnico, foram criadas contas fictícias, executadas alterações e comparados valores esperados e observados. Essa aproximação orienta a apresentação do exemplo; não reproduz o estudo com participantes nem valida o programa por citação.",
+    "A verificação do programa foi separada de uma eventual avaliação de aprendizagem. Rexigel et al. (2024, p. 6–7) descrevem medidas do desempenho de estudantes. Os nossos testes verificaram saldos, acesso compartilhado, recusas de operações e exportação; o Apêndice A identifica os registros e as versões. Como não foram aplicadas tarefas a estudantes, os testes de software não permitem concluir sobre aprendizagem."
+  ],
+  "referencial": [
+    {
+      "titulo": "2.1 Formas de apresentar o mesmo exemplo",
+      "paragrafos": [
+        "Combinar formas de apresentação exige explicitar o que as relaciona. Rexigel et al. (2024, p. 9) discutem destaques e ligações entre representações. Na ferramenta, o desenho resume a conta, as instruções indicam a operação e os valores mostram seu efeito. Os destaques são uma escolha de desenvolvimento a ser avaliada, sem benefício educacional presumido.",
+        "A explicação deve permitir acompanhar as mudanças sem exigir domínio prévio do vocabulário técnico. Sibia et al. (2026, p. 5) articulam instruções, valores e referências em vistas sincronizadas. No nosso exemplo, objeto é a conta criada pelo programa, e saldo é um valor guardado nessa conta. Esses termos identificam elementos da demonstração; não representam uma descrição completa da linguagem Java."
+      ]
+    },
+    {
+      "titulo": "2.2 Relações que a demonstração apresenta",
+      "paragrafos": [
+        "A apresentação precisa preservar as relações que pretende tornar observáveis. Sibia et al. (2026, p. 4) distinguem fidelidade conceitual de reprodução literal da memória física. Nos testes próprios, duas contas separadas mantêm saldos independentes, enquanto dois nomes da mesma conta acessam um único saldo. Esse contraste define o comportamento conferido no demonstrador, sem atribuir sua validação ao estudo citado."
+      ]
+    },
+    {
+      "titulo": "2.3 Utilidade depende de investigação",
+      "paragrafos": [
+        "Uma apresentação visual pode ser recebida de maneiras diferentes pelas pessoas. Sibia et al. (2026, p. 9–10) relatam reações divergentes às mesmas metáforas. Assim, pretendemos investigar se os destaques do nosso exemplo ajudam o público escolhido ou dificultam sua leitura. A questão permanece aberta porque esse público ainda não utilizou a ferramenta em uma avaliação.",
+        "Os resultados de outras pesquisas exigem cautela ao justificar uma nova ferramenta. Rexigel et al. (2024, p. 28) relatam também resultados sem diferença de aprendizagem. Por isso, apresentar desenho, instruções e saldos constitui uma proposta fundamentada, cujo efeito local é desconhecido. A literatura sustenta investigá-la, sem estabelecer superioridade sobre outras ferramentas."
+      ]
+    },
+    {
+      "titulo": "2.4 Funcionamento, aprendizagem e comunicação pública",
+      "paragrafos": [
+        "O que se comunica sobre a ferramenta deve acompanhar o que foi efetivamente investigado. Sibia et al. (2026, p. 12) limitam suas conclusões e não analisam desempenho como resultado. Neste projeto, podemos demonstrar operações e informar os testes próprios; não há dados de aprendizagem nem de intenção de compra. Assim, benefícios educacionais e aceitação comercial continuam como perguntas para pesquisas futuras."
+      ]
+    }
+  ],
+  "consideracoes": [
+    "O trabalho produziu uma demonstração que relaciona desenho, instruções Java e valores de contas fictícias. Rexigel et al. (2024, p. 48) fundamentam investigar apoios entre representações. A implementação aplica essa orientação e possui registros próprios de verificação técnica, identificados no Apêndice A. Isso descreve o resultado desenvolvido, sem comprovar que ele facilite aprender programação.",
+    "O resultado técnico tem alcance restrito ao exemplo e às operações conferidas. Sibia et al. (2026, p. 12) delimitam seus achados a um contexto específico. No nosso caso, foi conferida a passagem de 100 para 125, mantendo 20 em outra conta, além do acesso compartilhado à mesma conta. Esses registros sustentam somente o funcionamento observado nas versões testadas.",
+    "A continuidade depende de investigar como o público utilizará a ferramenta. Sibia et al. (2026, p. 12–13) reconhecem que a transferência de seus achados permanece aberta. O próximo passo proposto é revisar o material com o professor e definir tarefas e condições para uma futura avaliação. Até sua realização, permanecem sem resposta a compreensão por leigos, a aprendizagem e a demanda comercial."
+  ]
+}

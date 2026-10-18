@@ -1,0 +1,16 @@
+{
+  "pages": {
+    "intro": 4,
+    "obj": 4,
+    "geral": 4,
+    "especificos": 4,
+    "metodo": 5,
+    "teoria": 6,
+    "fim": 8,
+    "refs": 9,
+    "apendice": 10,
+    "anexos": 11
+  },
+  "rendered_page_count": 11,
+  "source": "Verified rendered DOCX; regenerate after any layout change"
+}

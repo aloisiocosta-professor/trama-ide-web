@@ -1,0 +1,45 @@
+{
+  "data": "2026-10-18",
+  "timezone": "America/Fortaleza",
+  "criterio_ativo": {
+    "ano_minimo": 2021,
+    "ano_maximo": 2026,
+    "referencias_anteriores_a_2016": "proibidas",
+    "excecoes_2016_2020": false
+  },
+  "docx": "paper/projeto-integrador-versao-revisao.docx",
+  "docx_sha256": "7997451843c8ecfcd569e68b1cc9cb6895a92dde024eeba3026a6c65185185a2",
+  "anos_presentes_no_docx": [
+    2024,
+    2026
+  ],
+  "referencias_ativas": [
+    {
+      "id": "R2024",
+      "ano": 2024,
+      "versao": "Versão publicada, PDF integral de 59 páginas"
+    },
+    {
+      "id": "S2026",
+      "ano": 2026,
+      "versao": "Versão dos autores, arXiv:2606.19570v1, 17 jun. 2026; não comparada integralmente à versão final da editora"
+    }
+  ],
+  "paragrafos_argumentativos_conferidos": 18,
+  "citacoes_fora_do_intervalo_ativo": 0,
+  "fontes_bibliograficas_anteriores_a_2016_na_entrega_ativa": 0,
+  "historicos_fora_do_recorte": {
+    "arquivos": [
+      "paper/manuscrito.md",
+      "paper/manuscrito-preliminar.pdf"
+    ],
+    "anos_anteriores_a_2016": [
+      2002,
+      2003,
+      2004,
+      2006
+    ],
+    "situacao": "Não compõem a entrega ativa; identificados no índice; preservados como histórico"
+  },
+  "limite": "Conferência temporal e documental, não aprovação científica. DOCX preservado sem mudança de conteúdo."
+}
