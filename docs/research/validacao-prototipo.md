@@ -19,3 +19,9 @@ Arquivos originais da execucao estao em evidence/ci-5cf946/. ZIP original confer
 As duas imagens foram produzidas pelo painel Swing fora da tela. A imagem linked foi inspecionada visualmente nesta sessao; o conteudo principal estava visivel com rolagem para linhas extensas. Isso nao equivale a teste de usabilidade ou acessibilidade com participantes.
 
 Conclusao permitida: o demonstrador executou os cenarios tecnicos previstos. Nao se conclui eficacia educacional, novidade, aptidao comercial ou validade dos instrumentos. A issue #8 permanece em revisao ate completar os requisitos de aceitacao pertinentes, inclusive ensaio interativo de registro/exportacao.
+
+## Atualizacao de aceite tecnico — 18/10/2026
+
+O commit 89a84aa3132eb6c369a2dfe7ff2057716fe4b0df passou em 28 verificacoes Java, cinco testes do gerador e nove verificacoes graficas em display virtual. O ensaio criou contas por botoes, chamou metodo, registrou respostas e exportou TSV pelo seletor real. Corrigida a abertura da visualizacao de estado no fim da linha e o recorte de rotulo UML; as regressões passaram. Execucao: https://github.com/aloisiocosta-professor/trama-ide-web/actions/runs/39104951676 . Evidencias originais adicionais em evidence/ci-89a84a/.
+
+A issue #8 foi fechada como completed para o prototipo minimo desse escopo. A pendencia de ensaio funcional de exportacao foi resolvida por teste grafico automatizado e inspecao visual da captura; nao se substitui avaliacao de usabilidade com pessoas. A evidencia inicial acima permanece historica.

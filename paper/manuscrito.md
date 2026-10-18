@@ -57,7 +57,7 @@ A execução inicial utilizou JDK Temurin 17.0.20.1 em runner Linux. O esqueleto
 | Respostas | Contagens de eventos antes/depois preservadas | Registro técnico de cronologia |
 | Interface | Duas condições renderizadas fora da tela | Renderização técnica, não usabilidade |
 
-Esses testes não produzem estimativa de efeito educacional. A quantidade de verificações não é tamanho amostral, e seus resultados não podem ser interpretados como respostas de estudantes. Um ensaio gráfico automatizado adicional foi preparado para exercitar botões, registro e exportação; seus resultados devem ser citados por execução e versão próprias, sem alterar retroativamente a evidência inicial.
+Esses testes não produzem estimativa de efeito educacional. A quantidade de verificações não é tamanho amostral, e seus resultados não podem ser interpretados como respostas de estudantes. Em uma execução posterior, nove verificações da interface gráfica passaram em display virtual: janela visível, criação e depósito por botões, preservação da outra instância, exibição legível de estado e membro UML, registro de respostas, exportação pelo seletor de arquivos e conteúdo exportado. Essa evidência corresponde ao commit 89a84aa3132eb6c369a2dfe7ff2057716fe4b0df e à execução 39104951676. Não houve avaliação humana de usabilidade ou aprendizagem.
 
 ## 6. Avaliação educacional prospectiva
 

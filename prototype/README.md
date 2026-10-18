@@ -40,7 +40,7 @@ O arquivo de saida deve ser novo; o gerador nao sobrescreve. E um subconjunto es
 python3 tools/build_research.py
 ```
 
-Executa verificacoes do gerador, compila esqueleto e exemplo implementado, roda testes sem participantes e renderiza ambas as condicoes fora da tela. O script exige javac/java no PATH. Testes de interface fora da tela verificam componentes e renderizacao; nao equivalem a estudo de usabilidade ou validacao manual de todos os controles.
+Executa verificacoes do gerador, compila esqueleto e exemplo implementado, roda testes sem participantes e renderiza ambas as condicoes fora da tela e exercita criacao, chamadas, respostas e exportacao em display virtual com xvfb-run. O script exige javac/java no PATH. Testes de interface fora da tela verificam componentes e renderizacao; nao equivalem a estudo de usabilidade ou validacao manual de todos os controles.
 
 ## Limites
 

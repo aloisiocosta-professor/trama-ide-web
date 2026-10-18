@@ -11,3 +11,5 @@
 | Arquivo novo nao inventariado passava | Comparacao entre arvore Git governada e entradas do inventario |
 
 11 testes de regressao locais passaram. O aceite da issue exige tambem execucao remota do novo head. Nao se declara essa execucao antes de observa-la.
+
+Verificacao remota observada: execucao 39104286164 concluida com success no commit 7b77e479. A issue #21 foi fechada como completed e os cinco threads foram resolvidos apos conferencia.
