@@ -51,6 +51,10 @@ public final class LabUiSmoke {
                 field("amount","25.00");click("deposit");
                 check(panel.engine().snapshot().get("ana").balance().equals("125.00"),"deposit through button");
                 check(panel.engine().snapshot().get("bruno").balance().equals("20.00"),"other instance preserved");
+                JTextArea state=(JTextArea)named(panel,"object-state");
+                check(state.getCaretPosition()==0&&state.getText().startsWith("ESTADO ATUAL")&&state.getText().contains("balance = 125.00"),"state view starts at readable snapshot");
+                JButton getter=button(panel,"+ getBalance(): BigDecimal");
+                check(getter.getWidth()>=getter.getPreferredSize().width,"UML member label fits");
                 field("explanation","A chamada tem receptor ana");click("Guardar explicacao");
                 check(panel.responses().size()==2,"responses through buttons");
             });

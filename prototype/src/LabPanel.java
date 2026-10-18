@@ -26,7 +26,7 @@ public final class LabPanel extends JPanel {
         this.linked = linked;
         this.sourceMap = new SourceMap(actualSource);
         name.setName("reference-name"); amount.setName("amount"); targets.setName("target");
-        prediction.setName("prediction"); justification.setName("explanation");
+        prediction.setName("prediction"); justification.setName("explanation"); state.setName("object-state");
         setLayout(new BorderLayout(12, 12));
         setBorder(BorderFactory.createEmptyBorder(16, 16, 16, 16));
         setBackground(new Color(244, 247, 251));
@@ -36,18 +36,20 @@ public final class LabPanel extends JPanel {
         add(title, BorderLayout.NORTH);
         JPanel center = new JPanel(new GridLayout(1,3,12,0));
         JPanel uml = new JPanel(); uml.setLayout(new BoxLayout(uml,BoxLayout.Y_AXIS));
-        uml.add(new JLabel("BankAccount"));
+        JLabel className=new JLabel("BankAccount");className.setAlignmentX(Component.LEFT_ALIGNMENT);uml.add(className);
         for (String[] member : new String[][]{
             {"balance", "- balance: BigDecimal"}, {"constructor", "+ BankAccount(initial)"},
             {"deposit", "+ deposit(amount): void"}, {"withdraw", "+ withdraw(amount): void"},
             {"getBalance", "+ getBalance(): BigDecimal"}}) {
             JButton button = new JButton(member[1]);
             button.setAlignmentX(Component.LEFT_ALIGNMENT);
+            button.setMaximumSize(new Dimension(Integer.MAX_VALUE,button.getPreferredSize().height));
             button.addActionListener(e -> select(member[0]));
             umlButtons.put(member[0], button); uml.add(button); uml.add(Box.createVerticalStrut(8));
         }
         JTextArea description = new JTextArea("Uma classe define o tipo.\nCada objeto tem seu estado.\nDuas referencias podem apontar\npara o mesmo objeto.");
         description.setEditable(false); description.setLineWrap(true); description.setWrapStyleWord(true);
+        description.setAlignmentX(Component.LEFT_ALIGNMENT);
         uml.add(description);
         center.add(card("1 · Classe UML (subconjunto)", uml));
         source.setText(actualSource); source.setEditable(false); source.setFont(new Font(Font.MONOSPACED,Font.PLAIN,12));
@@ -114,17 +116,23 @@ public final class LabPanel extends JPanel {
     }
     private void updateState(TraceEngine.Event event) {
         String selected=(String)targets.getSelectedItem();targets.removeAllItems();
-        StringBuilder text=new StringBuilder("REFERENCIA -> IDENTIDADE -> SALDO\n\n");
-        engine.snapshot().forEach((key,value)->{ targets.addItem(key);text.append(key).append(" -> ").append(value.objectId()).append(" -> ").append(value.balance());if(linked&&event!=null&&event.changed().contains(key))text.append("  [ALTERADO]");text.append('\n'); });
+        StringBuilder text=new StringBuilder("ESTADO ATUAL\n\n");
+        engine.snapshot().forEach((key,value)->{ targets.addItem(key);text.append(key).append(" [").append(value.objectId()).append("]");if(linked&&event!=null&&event.changed().contains(key))text.append(" [ALTERADO]");text.append("\n  balance = ").append(value.balance()).append("\n\n"); });
         if(selected!=null)targets.setSelectedItem(selected);
-        if(event!=null){ text.append("\nANTES: ").append(event.before()).append("\nDEPOIS: ").append(event.after()); }
-        state.setText(text.toString());
+        if(event!=null){
+            text.append("ANTES DA CHAMADA\n");appendStates(text,event.before());
+            text.append("\nDEPOIS DA CHAMADA\n");appendStates(text,event.after());
+        }
+        state.setText(text.toString());state.setCaretPosition(0);
         StringBuilder calls=new StringBuilder("HISTORICO DE CHAMADAS\n");
         for(TraceEngine.Event item:engine.events()) {
             if(item.member().equals("alias"))calls.append(item.target()).append(" = ").append(item.argument()).append('\n');
             else calls.append(item.target()).append('.').append(item.member()).append('(').append(item.argument()).append(")\n");
         }
-        history.setText(calls.toString());
+        history.setText(calls.toString());history.setCaretPosition(0);
+    }
+    private static void appendStates(StringBuilder text,java.util.Map<String,TraceEngine.State> states){
+        states.forEach((reference,value)->text.append(reference).append(" [").append(value.objectId()).append("]\n  balance = ").append(value.balance()).append('\n'));
     }
     private static String clean(String value){return value.replace('\t',' ').replace('\n',' ').replace('\r',' ');}
     private void export() {
