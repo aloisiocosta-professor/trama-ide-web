@@ -83,7 +83,10 @@ jobs:
           assert re.search(r"#(1|14)\b", pr.get("body") or ""), "PR must reference governance or parent issue."
           print("Conventional Commits verified:", len(commits))
 
-          children = set(range(2, 15))
+          hierarchy = json.loads(content("docs/research/issue-hierarchy.json"))
+          assert hierarchy["parent_issue"] == 1
+          children = set(hierarchy["children"])
+          assert children and all(isinstance(n, int) and n > 1 and n != pr["number"] for n in children)
           existing = api("/issues/1/sub_issues?per_page=100")
           linked = {item["number"] for item in existing}
           for number in sorted(children - linked):
@@ -97,7 +100,7 @@ jobs:
               parent = api("/issues/" + str(number) + "/parent")
               assert parent["number"] == 1
               assert parent["repository_url"].endswith("/" + repo)
-          print("Native issue hierarchy verified: parent #1, children #2–#14.")
+          print("Native issue hierarchy verified: parent #1; children:", sorted(children))
           with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as summary:
               summary.write("Artifact hashes and Conventional Commits verified.\n\n")
-              summary.write("Native sub-issues #2–#14 verified under #1. No scientific step was closed.\n")
+              summary.write("Native sub-issues verified under #1: " + str(sorted(children)) + ". No scientific step was closed.\n")

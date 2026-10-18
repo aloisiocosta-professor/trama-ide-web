@@ -2,6 +2,8 @@
 
 Objetivo: desenvolver e avaliar correspondências explícitas entre UML, código Java e estado dos objetos, para um artigo científico defensável. Viabilidade comercial é investigação separada.
 
+- [Meta do projeto](GOAL.md)
+- [Guia para o autor](guia-autor.md)
 - [Protocolo v0.1](Protocolo-UML-Java-v0.1.md)
 - [Roteiro e issues](ROADMAP.md)
 - [Governança](GOVERNANCA.md)

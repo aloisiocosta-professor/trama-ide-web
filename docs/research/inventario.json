@@ -1,5 +1,5 @@
 {
-  "version": "0.2",
+  "version": "0.3",
   "scope": "Arquivos do projeto produzidos nesta sessão; histórico editorial e protocolo integral",
   "local_date": "2026-10-17",
   "timezone": "America/Fortaleza",
@@ -16,13 +16,18 @@
     },
     {
       "path": ".github/workflows/research-governance.yml",
-      "sha256": "044e64d9ac07e22efe9ee2a2c0bb110fa4f2e7458b1d38e0ca576604f0631b94",
-      "bytes": 4747
+      "sha256": "1b12828156c07ae3ae75b2616d5d137ef9f72770b38b1bc8d5788d9fc193ff0b",
+      "bytes": 5019
     },
     {
       "path": "AGENTS.md",
-      "sha256": "0d834b30d78f497ced3160207c17e6bc71f0a540f5078909bdbed5ecec5e2c84",
-      "bytes": 2851
+      "sha256": "49944b5d2ee93eed000afd22ffffe3938eb1d9f8d927eb93975a55af857fbd97",
+      "bytes": 3534
+    },
+    {
+      "path": "docs/research/GOAL.md",
+      "sha256": "6e7db890c15063b4705f85c109888444d9bfbc97e5852690151d7942ff94e7d9",
+      "bytes": 5861
     },
     {
       "path": "docs/research/GOVERNANCA.md",
@@ -36,8 +41,8 @@
     },
     {
       "path": "docs/research/README.md",
-      "sha256": "dafe983612f451a05bc3222f3cbf26c3e736b7d3788c046fbef4df5859f63faa",
-      "bytes": 942
+      "sha256": "fb8d6c8355e572c78ac7d1ea5b2dd7821a2a4693595b977f8f2a680984e12f17",
+      "bytes": 1008
     },
     {
       "path": "docs/research/ROADMAP.md",
@@ -60,6 +65,16 @@
       "bytes": 1544
     },
     {
+      "path": "docs/research/guia-autor.md",
+      "sha256": "b47849b3ec3bd082c89295bfedd3a8a7053cbed6dd71388e7b114a4c7f554d8b",
+      "bytes": 5868
+    },
+    {
+      "path": "docs/research/issue-hierarchy.json",
+      "sha256": "7bce171d66f8b8292808865e47bf5bead8bdba9905dffed01d509a0758f1fba4",
+      "bytes": 180
+    },
+    {
       "path": "docs/research/produto-comunicacao.md",
       "sha256": "c27e31d1bd5ecd37a4e34533a1dda63b39f0f406bce46fc1dbc5b47352522ad6",
       "bytes": 1512
@@ -75,10 +90,14 @@
       "bytes": 2509
     },
     {
+      "path": "docs/session/2026-10-17-09-meta-orientada.md",
+      "sha256": "8cb9bda2fb03d21bdcb06d7598cd4c6f6057096ac365ab85d3d116f561f12ce7",
+      "bytes": 3537
+    },
+    {
       "path": "docs/session/2026-10-17-historico.md",
       "sha256": "894bcd7f4a7495f122b6a41232736d642e03b095a092537491d6180cb985d314",
       "bytes": 24344
     }
   ]
 }
-

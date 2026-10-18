@@ -19,3 +19,7 @@ Preserve somente o conteúdo deste projeto autorizado para publicação. Não co
 
 ## Conclusão de cada interação
 Atualizar docs/research/inventario.json ao mudar arquivos documentais listados ou incluir novos artefatos; o inventário exclui a si próprio. Verificar commit/PR remoto e reportar link, resultado e pendência material. Nunca afirmar sincronização quando falhar. Persistir mudanças antes de pedir decisão essencial ao usuário.
+
+## Meta e acompanhamento do autor
+Ler docs/research/GOAL.md e guia-autor.md. A necessidade de aprendizagem metodológica do autor faz parte do trabalho: explicar o que/por que/como, mostrar o artefato e a evidência e preservar suas decisões. Não substituir aprovação institucional ou editorial por checks internos.
+Etapas complementares: formação #16, defesa aplicável #17, submissão/pareceres #18, publicação #19 e encerramento #20. Definição de conclusão: zero bloqueadores das entregas, limitações declaradas e critérios cumpridos; questões externas abertas até decisão comprovada. Não fabricar um cenário institucional para contornar informação ausente.
