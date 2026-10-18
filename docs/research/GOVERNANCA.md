@@ -10,7 +10,7 @@ Issue principal: #1. Etapas: #2–#13. Governança: #14.
 2. Identificar issue(s) e critério(s) pertinente(s).
 3. Registrar pergunta e resposta/pergunta final planejada em docs/session, junto das decisões.
 4. Atualizar artefatos produzidos; distinguir fonte, inferência e proposta.
-5. Verificar o necessário; criar commit convencional com referências a issues.
+5. Atualizar inventario.json com hashes dos arquivos pertinentes, excluindo o próprio inventário. Verificar o necessário; criar commit convencional com referências a issues.
 6. Sincronizar a branch e abrir/atualizar PR vinculado.
 7. Conferir resultado remoto e comunicar links reais.
 8. Se houver falha, preservá-la e informar o que não foi sincronizado.
@@ -21,7 +21,7 @@ Comentários de andamento são consolidados no registro da interação. O regist
 PR contém problema, mudança, issues, resultado esperado, critérios atendidos, verificações e pendências. Não encerrar etapas científicas por geração de documento preliminar. Merge não é automático. Enquanto o PR estiver aberto, os arquivos existem publicamente na branch e no diff, mesmo sem integrar main.
 
 ## Sub-issues nativas
-O workflow research-governance configura relações de #2–#14 como filhos de #1, com permissão limitada a issues:write. Executa somente no repositório autorizado e em PR da branch de bootstrap do mesmo repositório. A existência das relações será verificada pela API antes de declarar conclusão.
+O workflow research-governance configura relações de #2–#14 como filhos de #1, com permissão limitada a issues:write. Executa somente no repositório autorizado e em PR da branch de bootstrap do mesmo repositório. Relações nativas verificadas no workflow 39081842411 e em consulta independente à API. Ver relatório verificacao-publicacao.md.
 
 ## Limite das verificações
 Verificação de hash demonstra preservação do protocolo; não valida cientificamente seu conteúdo. Workflow de hierarquia demonstra vínculos; não aprova pesquisa, ética ou manuscrito.

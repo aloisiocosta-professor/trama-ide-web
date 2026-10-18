@@ -18,4 +18,4 @@ Diferenciar fatos, inferências e recomendações. Não inventar dados, referên
 Preserve somente o conteúdo deste projeto autorizado para publicação. Não copiar credenciais, dados pessoais de participantes, mensagens de terceiros ou fontes integrais protegidas. Consulte política de dados do protocolo antes de incluir dados. Não expor histórico de desenvolvimento de outros repositórios sem escopo específico.
 
 ## Conclusão de cada interação
-Verificar commit/PR remoto e reportar link, resultado e pendência material. Nunca afirmar sincronização quando falhar. Persistir mudanças antes de pedir decisão essencial ao usuário.
+Atualizar docs/research/inventario.json ao mudar arquivos documentais listados ou incluir novos artefatos; o inventário exclui a si próprio. Verificar commit/PR remoto e reportar link, resultado e pendência material. Nunca afirmar sincronização quando falhar. Persistir mudanças antes de pedir decisão essencial ao usuário.

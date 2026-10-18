@@ -11,5 +11,6 @@ Objetivo: desenvolver e avaliar correspondências explícitas entre UML, código
 - [Decisões](decisoes.md)
 - [Produto e comunicação](produto-comunicacao.md)
 - [Inventário](inventario.json)
+- [Verificação da publicação](verificacao-publicacao.md)
 
 Estado: planejamento inicial; revisão integral, novidade e avaliação pendentes. O repositório já hospeda uma distribuição Trama IDE; o mecanismo experimental descrito no protocolo não é presumido implementado nela. Nenhum dado empírico foi gerado nesta sessão.

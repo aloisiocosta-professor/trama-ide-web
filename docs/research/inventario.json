@@ -1,5 +1,5 @@
 {
-  "version": "0.1",
+  "version": "0.2",
   "scope": "Arquivos do projeto produzidos nesta sessão; histórico editorial e protocolo integral",
   "local_date": "2026-10-17",
   "timezone": "America/Fortaleza",
@@ -21,13 +21,13 @@
     },
     {
       "path": "AGENTS.md",
-      "sha256": "6a633200e4d3262f6bf963cee30a708efbfb94e1669cc0f676576f5c5fccd0c3",
-      "bytes": 2708
+      "sha256": "0d834b30d78f497ced3160207c17e6bc71f0a540f5078909bdbed5ecec5e2c84",
+      "bytes": 2851
     },
     {
       "path": "docs/research/GOVERNANCA.md",
-      "sha256": "20a43e83f944fc1e19aaeb5ff2ea138ad2f8105c45929f176f66dd2cd3ab5aff",
-      "bytes": 2019
+      "sha256": "de319a962de7e1534e835daaf059a86f540524bb13a15c6e4111e2ac177346db",
+      "bytes": 2163
     },
     {
       "path": "docs/research/Protocolo-UML-Java-v0.1.md",
@@ -36,8 +36,8 @@
     },
     {
       "path": "docs/research/README.md",
-      "sha256": "16ea32193c0040f2f25f336003de4f049b5c3f8cd37b20266f6e3ca2fe2f04b1",
-      "bytes": 881
+      "sha256": "dafe983612f451a05bc3222f3cbf26c3e736b7d3788c046fbef4df5859f63faa",
+      "bytes": 942
     },
     {
       "path": "docs/research/ROADMAP.md",
@@ -65,9 +65,14 @@
       "bytes": 1512
     },
     {
+      "path": "docs/research/verificacao-publicacao.md",
+      "sha256": "5efd7a0d3089b1644005e39112b854dde43ad179d5aa3ba07f53367435c1441c",
+      "bytes": 1506
+    },
+    {
       "path": "docs/session/2026-10-17-08-publicacao.md",
-      "sha256": "e43169d7a89710456777258a359686ec1c6285fdbb179fb1892e44af24894b14",
-      "bytes": 1753
+      "sha256": "77853566d26ff16c6ffb3de99ab56ed7677efb932c7006ce89502eda5befe11b",
+      "bytes": 2509
     },
     {
       "path": "docs/session/2026-10-17-historico.md",
@@ -76,3 +81,4 @@
     }
   ]
 }
+
