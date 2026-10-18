@@ -1,69 +1,67 @@
-# Seções revisadas para leitores sem formação em computação
+# Seções revisadas após leitura integral
 
-Recorte bibliográfico de 2016 a 2026, com prioridade para 2021 a 2026. Cinco fontes selecionadas de 2021 a 2026. Revisão de 18/10/2026.
+Convenção editorial: A — afirmação; B — base com citação indireta; C — conexão com o projeto; D — desdobramento ou limite. A separação das quatro partes está em auditoria-paragrafos-abcd.json. Páginas citadas referem-se aos PDFs efetivamente lidos.
 
-## 1 INTRODUÇÃO
+# 1 INTRODUÇÃO
 
-Este Projeto Integrador apresenta uma ferramenta visual para acompanhar o que um programa faz com os dados. O exemplo usa duas contas fictícias, sem dinheiro real ou dados pessoais. Lu e Alexandru (2023) analisam ferramentas de diagramas para o ensino de desenvolvimento de programas. Neste trabalho, o desenho ajuda a apresentar a estrutura da conta; as demais partes da tela mostram as instruções escritas em Java e os valores das contas.
+Relacionar diferentes formas de apresentar um conteúdo é uma questão relevante para o desenvolvimento desta ferramenta. Rexigel et al. (2024, p. 48) destacam o apoio para conectar representações. Neste Projeto Integrador, representação significa uma forma de mostrar o mesmo exemplo: desenho da conta, instruções em Java e valores registrados. A reunião dessas partes orienta a proposta, cuja utilidade educacional ainda precisa ser investigada.
 
-Java é a linguagem usada para escrever as instruções do exemplo. Cada conta criada pelo programa é chamada de objeto; seu saldo é um dos dados guardados nela. Rexigel et al. (2024) apontam que combinar diferentes formas de apresentar um conteúdo pode trazer benefícios em certas condições, especialmente quando existe apoio para relacioná-las. Por isso, a ferramenta destaca a relação entre desenho, instruções e valores, sem presumir que esses destaques garantam aprendizagem.
+A pergunta do projeto é como apresentar e conferir a relação entre instruções e mudanças nos dados de contas fictícias. Sibia et al. (2026, p. 8) observaram o uso combinado de código e memória. Aqui, uma conta começa com 100, recebe 25 e passa a 125; outra conta deve manter 20. Esse exemplo delimita a demonstração técnica, sem transferir ao nosso programa os resultados daquele estudo.
 
-A pergunta do trabalho é: como construir uma ferramenta que mostre a relação entre as instruções de um programa e a mudança dos dados de contas de exemplo, e como conferir seu funcionamento? Um caso simples orienta essa pergunta: uma conta começa com 100, recebe 25 e deve passar a 125, enquanto a outra mantém seu valor. Os registros dos testes permitem conferir esse comportamento. O resultado disponível é uma demonstração de funcionamento; ainda não houve avaliação com estudantes.
+O alcance do trabalho depende do tipo de evidência disponível. Sibia et al. (2026, p. 12) distinguem investigar o uso de visualizações de medir desempenho. No projeto, existem registros de testes do programa, mas não houve coleta com estudantes. Portanto, as conclusões desta versão tratam do funcionamento demonstrado e das perguntas ainda abertas.
+
+## 1.1 OBJETIVOS
+
+### 1.1.1 Objetivo Geral
+
+Desenvolver e verificar uma ferramenta que relacione instruções Java e dados de contas de exemplo. Rexigel et al. (2024, p. 48) apontam a importância de apoio entre representações. Essa orientação será aplicada à apresentação conjunta do desenho, das instruções e dos valores. O objetivo abrange construir e conferir o recurso; não inclui comprovar aprendizagem nesta etapa.
+
+### 1.1.2 Objetivos Específicos
+
+Relacionar a literatura selecionada às escolhas de apresentação da ferramenta. Rexigel et al. (2024, p. 49) ressaltam limites de generalização entre contextos. Cada escolha será associada a uma fonte lida integralmente e ao trecho pertinente. Essa relação deverá sustentar a justificativa sem transformar resultados externos em resultados próprios.
+
+Implementar e testar situações de alteração e compartilhamento de dados, preservando os registros. Sibia et al. (2026, p. 5) apresentam visualizações de valores e referências a objetos. Aqui, serão conferidos saldos independentes e dois nomes que acessam a mesma conta. Esses testes verificarão o exemplo implementado; a avaliação com pessoas permanecerá uma etapa distinta.
 
 ## 1.2 METODOLOGIA
 
-O trabalho reuniu consulta a publicações, análise de ferramentas descritas nessas fontes, construção do programa e testes de funcionamento. Johannesson e Perjons (2021) apresentam um roteiro de pesquisa que distingue definir o problema, estabelecer requisitos, desenvolver, demonstrar e avaliar uma solução. Aqui, isso significa decidir o que a ferramenta deve mostrar e conferir se ela realiza as operações previstas. Essa aproximação não equivale a comprovar seu valor educacional.
+A seleção bibliográfica foi orientada pela correspondência entre a fonte e o argumento que ela sustenta. Rexigel et al. (2024, p. 49) alertam para a dependência dos resultados em relação ao contexto. Entre as cinco referências anteriores, foram mantidas duas após leitura completa: o artigo publicado de 2024 e a versão dos autores de 2026. O registro de leitura identifica versões, páginas e exclusões; esta seleção exploratória não constitui revisão sistemática.
 
-A busca bibliográfica foi exploratória, com recorte de publicações de 2016 até 18 de outubro de 2026 e prioridade para 2021–2026. Foram selecionadas cinco fontes de 2021, 2023, 2024 e 2026 sobre visualização, diagramas e método de pesquisa. Consultaram-se os trechos acessíveis e os resumos identificados no registro de fontes. Não se realizou uma revisão sistemática nem leitura integral de todas as obras.
+A construção do exemplo adotou operações cujos efeitos podem ser acompanhados e conferidos. Sibia et al. (2026, p. 7) utilizam tarefas de acompanhamento e explicação de operações. No nosso procedimento técnico, foram criadas contas fictícias, executadas alterações e comparados valores esperados e observados. Essa aproximação orienta a apresentação do exemplo; não reproduz o estudo com participantes nem valida o programa por citação.
 
-Na construção, foram usadas contas fictícias para representar objetos, isto é, elementos que o programa cria e cujos dados pode alterar. A tela reúne um desenho da estrutura da conta, as instruções escritas e os saldos registrados. Existem duas versões de apresentação: uma acrescenta destaques que relacionam essas partes e a outra omite os destaques. Ambas usam as mesmas operações, o que permite conferir seu comportamento e preparar uma comparação futura.
+A verificação do programa foi separada de uma eventual avaliação de aprendizagem. Rexigel et al. (2024, p. 6–7) descrevem medidas do desempenho de estudantes. Os nossos testes verificaram saldos, acesso compartilhado, recusas de operações e exportação; o Apêndice A identifica os registros e as versões. Como não foram aplicadas tarefas a estudantes, os testes de software não permitem concluir sobre aprendizagem.
 
-Os testes compararam valores esperados e observados. O caso de depósito verificou a passagem de 100 para 125 e a manutenção de 20 na outra conta. Também foram conferidos dois nomes para a mesma conta, operações que devem ser recusadas e a gravação dos registros em arquivo. A execução inicial aprovou 28 verificações Java e cinco testes do gerador; outra aprovou nove verificações da tela. O Apêndice A identifica essas evidências. Nenhum desses números representa quantidade de estudantes.
+# 2 REFERENCIAL TEÓRICO
 
-## 2 REFERENCIAL TEÓRICO
+## 2.1 Formas de apresentar o mesmo exemplo
 
-### 2.1 Desenhos e instruções sobre o mesmo exemplo
+Combinar formas de apresentação exige explicitar o que as relaciona. Rexigel et al. (2024, p. 9) discutem destaques e ligações entre representações. Na ferramenta, o desenho resume a conta, as instruções indicam a operação e os valores mostram seu efeito. Os destaques são uma escolha de desenvolvimento a ser avaliada, sem benefício educacional presumido.
 
-Apresentar a mesma situação de mais de uma forma pode apoiar sua compreensão, mas exige cuidado. Rexigel et al. (2024), ao reunir estudos de educação em ciências, tecnologia, engenharia e matemática, encontraram benefícios condicionados à forma de apoio oferecida. No projeto, o desenho resume o que uma conta contém, as instruções mostram a operação e os saldos mostram seu resultado. Essa aplicação é uma escolha de desenvolvimento, não uma reprodução dos resultados daqueles estudos.
+A explicação deve permitir acompanhar as mudanças sem exigir domínio prévio do vocabulário técnico. Sibia et al. (2026, p. 5) articulam instruções, valores e referências em vistas sincronizadas. No nosso exemplo, objeto é a conta criada pelo programa, e saldo é um valor guardado nessa conta. Esses termos identificam elementos da demonstração; não representam uma descrição completa da linguagem Java.
 
-O desenho segue uma notação chamada UML, usada para representar partes de um programa. Lu e Alexandru (2023) estudam ferramentas dessa notação para cursos superiores e discutem recursos de elaboração de diagramas e colaboração. Aqui, o desenho é limitado a uma conta de exemplo e suas operações. A fonte ajuda a situar essa escolha entre ferramentas existentes; não demonstra que o nosso recurso seja inédito ou superior.
+## 2.2 Relações que a demonstração apresenta
 
-### 2.2 O que o leitor precisa distinguir
+A apresentação precisa preservar as relações que pretende tornar observáveis. Sibia et al. (2026, p. 4) distinguem fidelidade conceitual de reprodução literal da memória física. Nos testes próprios, duas contas separadas mantêm saldos independentes, enquanto dois nomes da mesma conta acessam um único saldo. Esse contraste define o comportamento conferido no demonstrador, sem atribuir sua validação ao estudo citado.
 
-Para entender o exemplo, é suficiente começar por três ideias: descrição, conta criada e valor guardado. A descrição reúne os dados e as operações possíveis; cada conta criada é um objeto; o saldo é um valor desse objeto. Nos testes do projeto, duas contas separadas conservam saldos independentes. Assim, alterar uma conta não deve mudar a outra.
+## 2.3 Utilidade depende de investigação
 
-Também pode haver dois nomes para a mesma conta. Nesse caso, não existem duas contas separadas: consultar qualquer um dos nomes permite observar o saldo do mesmo objeto. Os testes verificam essa situação e a comparam com a criação de contas independentes. Esse contraste torna a explicação concreta e delimita o comportamento que a ferramenta apresenta.
+Uma apresentação visual pode ser recebida de maneiras diferentes pelas pessoas. Sibia et al. (2026, p. 9–10) relatam reações divergentes às mesmas metáforas. Assim, pretendemos investigar se os destaques do nosso exemplo ajudam o público escolhido ou dificultam sua leitura. A questão permanece aberta porque esse público ainda não utilizou a ferramenta em uma avaliação.
 
-### 2.3 Por que a utilidade precisa ser investigada
+Os resultados de outras pesquisas exigem cautela ao justificar uma nova ferramenta. Rexigel et al. (2024, p. 28) relatam também resultados sem diferença de aprendizagem. Por isso, apresentar desenho, instruções e saldos constitui uma proposta fundamentada, cujo efeito local é desconhecido. A literatura sustenta investigá-la, sem estabelecer superioridade sobre outras ferramentas.
 
-Mostrar várias partes de um programa na tela não garante que todas sejam utilizadas. Sibia et al. (2026) investigaram o uso de visualizações por universitários que já haviam cursado disciplinas introdutórias e identificaram diferenças nas formas de recorrer a esses apoios. Isso orienta uma pergunta para o nosso projeto: os destaques seriam úteis ao público pretendido? Como esse público ainda não foi avaliado, a resposta permanece aberta.
+## 2.4 Funcionamento, aprendizagem e comunicação pública
 
-Os resultados de outras pesquisas também não são uniformes. Yusuf e Noor (2023), em um mapeamento sobre animação de programas, relatam resultados variados e maior concentração de estudos no ensino superior. Portanto, um resultado favorável em outro curso não pode ser tratado como resultado deste Projeto Integrador. Será necessário observar o uso da ferramenta no contexto em que ela venha a ser aplicada.
+O que se comunica sobre a ferramenta deve acompanhar o que foi efetivamente investigado. Sibia et al. (2026, p. 12) limitam suas conclusões e não analisam desempenho como resultado. Neste projeto, podemos demonstrar operações e informar os testes próprios; não há dados de aprendizagem nem de intenção de compra. Assim, benefícios educacionais e aceitação comercial continuam como perguntas para pesquisas futuras.
 
-### 2.4 Funcionamento e aprendizagem são resultados distintos
+# 3 CONSIDERAÇÕES FINAIS
 
-Demonstrar uma solução e avaliar seus resultados são atividades que precisam ser explicitadas. Johannesson e Perjons (2021) distinguem essas atividades em seu roteiro de pesquisa. Neste trabalho, conferir que 100 mais 25 resulta em 125 mostra o funcionamento de uma operação. Para investigar aprendizagem, seria preciso verificar o que as pessoas conseguem explicar ou fazer após usar a ferramenta.
+O trabalho produziu uma demonstração que relaciona desenho, instruções Java e valores de contas fictícias. Rexigel et al. (2024, p. 48) fundamentam investigar apoios entre representações. A implementação aplica essa orientação e possui registros próprios de verificação técnica, identificados no Apêndice A. Isso descreve o resultado desenvolvido, sem comprovar que ele facilite aprender programação.
 
-A apresentação pública do programa deve acompanhar as evidências obtidas. Os registros disponíveis mostram testes de funcionamento, sem avaliação com estudantes e sem pesquisa de vendas. É possível apresentar o recurso como uma ferramenta visual para acompanhar contas de exemplo. Afirmar que ele melhora notas ou desperta interesse de compra dependeria de dados que ainda não foram coletados.
+O resultado técnico tem alcance restrito ao exemplo e às operações conferidas. Sibia et al. (2026, p. 12) delimitam seus achados a um contexto específico. No nosso caso, foi conferida a passagem de 100 para 125, mantendo 20 em outra conta, além do acesso compartilhado à mesma conta. Esses registros sustentam somente o funcionamento observado nas versões testadas.
 
-## 3 CONSIDERAÇÕES FINAIS
+A continuidade depende de investigar como o público utilizará a ferramenta. Sibia et al. (2026, p. 12–13) reconhecem que a transferência de seus achados permanece aberta. O próximo passo proposto é revisar o material com o professor e definir tarefas e condições para uma futura avaliação. Até sua realização, permanecem sem resposta a compreensão por leigos, a aprendizagem e a demanda comercial.
 
-Foi construída uma ferramenta que relaciona o desenho de uma conta, as instruções de um programa Java e os valores registrados durante seu funcionamento. Os testes preservados conferem operações específicas, como alterar uma conta sem mudar outra conta separada. Isso responde à pergunta técnica dentro do exemplo desenvolvido. O trabalho ainda não responde se a ferramenta facilita a aprendizagem.
+# 4 REFERÊNCIAS
 
-O principal resultado pode ser explicado sem conhecer programação: quando uma conta com 100 recebe 25, seu saldo passa a 125, e outra conta mantém 20. Também foi conferida a situação em que dois nomes permitem acessar a mesma conta. A execução inicial aprovou 28 verificações Java e cinco testes do gerador; uma versão posterior aprovou nove verificações da tela. Esses resultados descrevem testes do programa, não respostas de alunos.
+REXIGEL, Eva; KUHN, Jochen; BECKER, Sebastian; MALONE, Sarah. The More the Better? A Systematic Review and Meta-Analysis of the Benefits of More than Two External Representations in STEM Education. Educational Psychology Review, v. 36, art. 124, 2024. DOI: 10.1007/s10648-024-09958-y. Disponível em: https://doi.org/10.1007/s10648-024-09958-y. Acesso em: 18 out. 2026.
 
-A literatura recente justifica investigar a proposta, mas não autoriza prometer seus benefícios. Rexigel et al. (2024) destacam condições de apoio ao combinar formas de apresentação, e Sibia et al. (2026) mostram que as pessoas podem utilizar esses apoios de maneiras diferentes. Por isso, os destaques da ferramenta devem ser tratados como uma escolha a ser avaliada. O resultado de estudos externos não substitui uma avaliação própria.
-
-O projeto permanece limitado a contas fictícias e a um conjunto pequeno de operações. Não foram avaliadas facilidade de uso, aprendizagem ou demanda comercial. A continuidade exige revisar o material com o professor, confirmar as condições de aplicação e planejar a avaliação correspondente. Essas limitações orientam os próximos passos e o alcance das conclusões.
-
-## Referências
-
-JOHANNESSON, Paul; PERJONS, Erik. A Method Framework for Design Science Research. In: JOHANNESSON, Paul; PERJONS, Erik. An Introduction to Design Science. 2. ed. Cham: Springer, 2021. p. 77–93. DOI: 10.1007/978-3-030-78132-3_4.
-
-LU, Yuting; ALEXANDRU, Cristina. Systematic Review of UML Diagramming Software Tools for Higher Education Software Engineering Courses. In: CONFERENCE ON UNITED KINGDOM & IRELAND COMPUTING EDUCATION RESEARCH, 2023. Proceedings [...]. New York: ACM, 2023. art. 4, p. 1–7. DOI: 10.1145/3610969.3611123.
-
-REXIGEL, Eva; KUHN, Jochen; BECKER, Sebastian; MALONE, Sarah. The More the Better? A Systematic Review and Meta-Analysis of the Benefits of More than Two External Representations in STEM Education. Educational Psychology Review, v. 36, art. 124, 2024. DOI: 10.1007/s10648-024-09958-y.
-
-SIBIA, Naaz et al. Code as Anchor, Memory and Metaphor as Support: Learner Experiences with Multi-View Visualizations. In: ACM CONFERENCE ON INTERNATIONAL COMPUTING EDUCATION RESEARCH, 2026. Proceedings [...]. New York: ACM, 2026. v. 1, p. 229–243. DOI: 10.1145/3765964.3811662.
-
-YUSUF, Abdullahi; NOOR, Norah Md. Research trends on learning computer programming with program animation: A systematic mapping study. Computer Applications in Engineering Education, v. 31, n. 6, p. 1552–1582, 2023. DOI: 10.1002/cae.22659.
+SIBIA, Naaz et al. Code as Anchor, Memory and Metaphor as Support: Learner Experiences with Multi-View Visualizations. arXiv, versão 1, 17 jun. 2026. 15 p. Versão dos autores; identificada como trabalho do ICER 2026 no PDF. DOI da versão consultada: 10.48550/arXiv.2606.19570. Disponível em: https://arxiv.org/abs/2606.19570v1. Acesso em: 18 out. 2026.

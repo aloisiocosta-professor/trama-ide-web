@@ -1,27 +1,21 @@
 [
   {
-    "year": 2021,
-    "doi": "10.1007/978-3-030-78132-3_4",
-    "reference": "JOHANNESSON, Paul; PERJONS, Erik. A Method Framework for Design Science Research. In: JOHANNESSON, Paul; PERJONS, Erik. An Introduction to Design Science. 2. ed. Cham: Springer, 2021. p. 77–93. DOI: 10.1007/978-3-030-78132-3_4."
-  },
-  {
-    "year": 2023,
-    "doi": "10.1145/3610969.3611123",
-    "reference": "LU, Yuting; ALEXANDRU, Cristina. Systematic Review of UML Diagramming Software Tools for Higher Education Software Engineering Courses. In: CONFERENCE ON UNITED KINGDOM & IRELAND COMPUTING EDUCATION RESEARCH, 2023. Proceedings [...]. New York: ACM, 2023. art. 4, p. 1–7. DOI: 10.1145/3610969.3611123."
-  },
-  {
     "year": 2024,
     "doi": "10.1007/s10648-024-09958-y",
-    "reference": "REXIGEL, Eva; KUHN, Jochen; BECKER, Sebastian; MALONE, Sarah. The More the Better? A Systematic Review and Meta-Analysis of the Benefits of More than Two External Representations in STEM Education. Educational Psychology Review, v. 36, art. 124, 2024. DOI: 10.1007/s10648-024-09958-y."
+    "reference": "REXIGEL, Eva; KUHN, Jochen; BECKER, Sebastian; MALONE, Sarah. The More the Better? A Systematic Review and Meta-Analysis of the Benefits of More than Two External Representations in STEM Education. Educational Psychology Review, v. 36, art. 124, 2024. DOI: 10.1007/s10648-024-09958-y. Disponível em: https://doi.org/10.1007/s10648-024-09958-y. Acesso em: 18 out. 2026.",
+    "id": "R2024",
+    "version": "Versão publicada, PDF integral de 59 páginas",
+    "read_pages": 59,
+    "url": "https://link.springer.com/content/pdf/10.1007/s10648-024-09958-y.pdf"
   },
   {
     "year": 2026,
-    "doi": "10.1145/3765964.3811662",
-    "reference": "SIBIA, Naaz et al. Code as Anchor, Memory and Metaphor as Support: Learner Experiences with Multi-View Visualizations. In: ACM CONFERENCE ON INTERNATIONAL COMPUTING EDUCATION RESEARCH, 2026. Proceedings [...]. New York: ACM, 2026. v. 1, p. 229–243. DOI: 10.1145/3765964.3811662."
-  },
-  {
-    "year": 2023,
-    "doi": "10.1002/cae.22659",
-    "reference": "YUSUF, Abdullahi; NOOR, Norah Md. Research trends on learning computer programming with program animation: A systematic mapping study. Computer Applications in Engineering Education, v. 31, n. 6, p. 1552–1582, 2023. DOI: 10.1002/cae.22659."
+    "doi": "10.48550/arXiv.2606.19570",
+    "reference": "SIBIA, Naaz et al. Code as Anchor, Memory and Metaphor as Support: Learner Experiences with Multi-View Visualizations. arXiv, versão 1, 17 jun. 2026. 15 p. Versão dos autores; identificada como trabalho do ICER 2026 no PDF. DOI da versão consultada: 10.48550/arXiv.2606.19570. Disponível em: https://arxiv.org/abs/2606.19570v1. Acesso em: 18 out. 2026.",
+    "id": "S2026",
+    "published_doi": "10.1145/3765964.3811662",
+    "version": "Versão dos autores, arXiv:2606.19570v1, 17 jun. 2026; não comparada integralmente à versão final da editora",
+    "read_pages": 15,
+    "url": "https://arxiv.org/pdf/2606.19570v1"
   }
 ]

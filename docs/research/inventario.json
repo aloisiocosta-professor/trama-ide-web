@@ -1,5 +1,5 @@
 {
-  "version": "0.12",
+  "version": "0.13",
   "scope": "Arquivos do projeto produzidos nesta sessão; histórico editorial e protocolo integral",
   "local_date": "2026-10-18",
   "timezone": "America/Fortaleza",
@@ -46,8 +46,8 @@
     },
     {
       "path": "docs/research/README.md",
-      "sha256": "86fc80f4889395be9a2cef75f83b4be38f930408feb2c78fded018b9d95432e3",
-      "bytes": 2874
+      "sha256": "4134b5bfedc085b23b3c7f9628b37f1db0c5f5b56aaa367aecc3cf86177ac0ae",
+      "bytes": 3252
     },
     {
       "path": "docs/research/ROADMAP.md",
@@ -66,8 +66,8 @@
     },
     {
       "path": "docs/research/busca-recorte-2016-2026.md",
-      "sha256": "66e7ea4710bef86a8a2c84281c14ce155016e915a95c23cae1491deaf8a1736e",
-      "bytes": 3696
+      "sha256": "a58364140bda7774f75ba6e3a3fedbb580c7bd561959de22ea2e39fd40c0562e",
+      "bytes": 4340
     },
     {
       "path": "docs/research/buscas.md",
@@ -116,8 +116,8 @@
     },
     {
       "path": "docs/research/escrita-abcd-feynman.md",
-      "sha256": "af98c5c44c8e3f5a01ecd5348d50c9b34cbc13dd2bf4c9273312bf37337bcbd1",
-      "bytes": 5591
+      "sha256": "811ad1e5469ff7a18dabdd83de5d31f1fadb3e2501f5257304c282594a0534ae",
+      "bytes": 6621
     },
     {
       "path": "docs/research/etica-dados.md",
@@ -265,14 +265,19 @@
       "bytes": 188
     },
     {
+      "path": "docs/research/leitura-integral-fontes.md",
+      "sha256": "697f6a32b5fee00ca5691727ad35022b0a09f0ea7508c95b1449fe3a2e199b89",
+      "bytes": 8124
+    },
+    {
       "path": "docs/research/matriz-evidencias.csv",
       "sha256": "3a6bc52b0332f33fe466d103f583866fed9badb6f8528bd4cde0c86a7ecb48b0",
       "bytes": 4193
     },
     {
       "path": "docs/research/matriz-fontes-2016-2026.csv",
-      "sha256": "64dc2498d944a4533031d496c43af954bf3f0db3928aeb124d63e21cf7a855d0",
-      "bytes": 2137
+      "sha256": "025f86cefed6cfdcf7afbc562b71ce479bbbed06534727987159c16036ef7906",
+      "bytes": 2674
     },
     {
       "path": "docs/research/pergunta-objetivos.md",
@@ -298,6 +303,11 @@
       "path": "docs/research/validacao-prototipo.md",
       "sha256": "a6f0e4769a1cad1536044167f44b66013d8e913c2d636c41d0a47fa6afa3413a",
       "bytes": 3060
+    },
+    {
+      "path": "docs/research/verificacao-leitura-abcd.json",
+      "sha256": "5d4e72757b8dbae86f4cc39812028291ff9a5fc8a550e071d3205fad5466b564",
+      "bytes": 1410
     },
     {
       "path": "docs/research/verificacao-publicacao.md",
@@ -355,6 +365,21 @@
       "bytes": 3539
     },
     {
+      "path": "docs/session/2026-10-18-17-leitura-integral-abcd.md",
+      "sha256": "015835075bd0df8f6ebdf80b71834737849799a661f457af236aced57cd437ba",
+      "bytes": 5949
+    },
+    {
+      "path": "paper/auditoria-paragrafos-abcd.json",
+      "sha256": "d201cc2c8ee34255ed0c3a60a094a9d0574a906d957b3d74ae6cbd63cac3eba4",
+      "bytes": 12704
+    },
+    {
+      "path": "paper/auditoria-paragrafos-abcd.md",
+      "sha256": "4148c1b0918a7836b1b187bbe597045c0d089c8f5f3ded4a9da8bc300d17c375",
+      "bytes": 9057
+    },
+    {
       "path": "paper/manuscrito-preliminar.pdf",
       "sha256": "70d87135ea92b00254ef4b15b76b1483f1190efd6c0ea7ddcd2908d7e717d73e",
       "bytes": 58480
@@ -376,23 +401,23 @@
     },
     {
       "path": "paper/projeto-integrador-versao-revisao.docx",
-      "sha256": "999d3ad5ece07c9a2d599429bac183e8090c19a678704a82683ea19ae4ba1d0e",
-      "bytes": 42787
+      "sha256": "7997451843c8ecfcd569e68b1cc9cb6895a92dde024eeba3026a6c65185185a2",
+      "bytes": 42036
     },
     {
       "path": "paper/referencias-integrador.json",
-      "sha256": "39ee9187d7479abfbacdf6b975ae59df94c67e3caa7b5b59cb6ae9f0292155a2",
-      "bytes": 1765
+      "sha256": "69c3aed26678ab567559b92cf5c358f56ed787223a1753dcf65d6f600c64b572",
+      "bytes": 1360
     },
     {
       "path": "paper/secoes-abcd.json",
-      "sha256": "95eaac0072fb93275102b8f8855765ecdb7236bd22280990cd1ac74eacbf1867",
-      "bytes": 9069
+      "sha256": "d104c58f0f7db2c218f132672329daf65c6774139c5009f2a1b634505e825f85",
+      "bytes": 8071
     },
     {
       "path": "paper/secoes-revisadas-abcd.md",
-      "sha256": "ea4746d31a773dac570f7ef2cb44f8febb6bf8a0825e9ce1355314f9c624b4f9",
-      "bytes": 10266
+      "sha256": "b4b7ddb6fb8d50b528dea8efe6c35246f97be88edf9fab9cbf14b198dc704e7d",
+      "bytes": 8796
     },
     {
       "path": "prototype/README.md",
@@ -456,8 +481,8 @@
     },
     {
       "path": "tools/build_integrador.py",
-      "sha256": "bb0f7ab28724b3bbbe6cee0350b17d231f3aacb064335cc62cbba8a5b8f1e547",
-      "bytes": 8216
+      "sha256": "310b11da71d878d4a0bc8e12eb6198b1b468e5d7cdd818dc94af087b9ac4f43d",
+      "bytes": 8372
     },
     {
       "path": "tools/build_manuscript_pdf.py",

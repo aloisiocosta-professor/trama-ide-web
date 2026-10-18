@@ -29,3 +29,7 @@ Matriz de suporte e limites: matriz-fontes-2016-2026.csv. Referências ativas do
 A linguagem do corpo foi simplificada para definir Java, objeto, saldo e UML no contexto do exemplo. Os detalhes de compilação, ambiente e identificadores de execuções continuam no apêndice técnico para permitir conferência. O objetivo geral e os dois específicos foram reformulados em linguagem acessível, mantendo o recorte técnico de desenvolvimento e teste.
 
 Critérios conferidos: cinco referências no recorte; correspondência entre citações e lista; presença das quatro seções reescritas; dois objetivos específicos; sumário e 11 páginas renderizadas. A revisão de fontes permanece parcial, e a compreensão por leitores leigos requer revisão humana. Nenhuma issue científica é encerrada por essa adaptação.
+
+## Atualização após exigência de leitura integral
+
+A seleção preliminar acima é histórica. Na entrega ativa, permanecem somente Rexigel et al. (2024), versão publicada integral, e Sibia et al. (2026), versão dos autores arXiv v1 integral. As outras três fontes foram retiradas por falta de leitura integral. Versões, hashes, páginas, pertinência e cautelas estão em [leitura-integral-fontes.md](leitura-integral-fontes.md). A busca continua exploratória; acesso ao texto completo e aderência ao argumento são requisitos cumulativos para reinclusão. Nenhuma obra nova foi acrescentada para preencher artificialmente a lista.

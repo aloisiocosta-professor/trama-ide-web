@@ -27,6 +27,7 @@ def build():
         st.paragraph_format.line_spacing = 1.5
         st.paragraph_format.space_after = Pt(6)
     d.styles['Normal'].paragraph_format.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+    d.styles['Normal'].paragraph_format.keep_together = True
     for st in d.styles:
         for border in st.element.xpath('.//w:pBdr'):
             border.getparent().remove(border)
@@ -92,10 +93,9 @@ def build():
     for paragraph in sections['introducao']: para(paragraph)
     marked('1.1 OBJETIVOS',2)
     marked('1.1.1 Objetivo Geral',3)
-    para('Desenvolver e verificar uma ferramenta visual que mostre como as instruções de um programa Java alteram os dados de contas de exemplo.')
+    para(sections['objetivo_geral'])
     marked('1.1.2 Objetivos Específicos',3)
-    para('Relacionar estudos recentes sobre diagramas e visualização de programas às escolhas da ferramenta.')
-    para('Implementar e testar situações de alteração e compartilhamento de dados, registrando os resultados e os limites observados.')
+    for paragraph in sections['objetivos_especificos']: para(paragraph)
     marked('1.2 METODOLOGIA',2)
     for paragraph in sections['metodologia']: para(paragraph)
     page();marked('2 REFERENCIAL TEÓRICO')
@@ -109,16 +109,40 @@ def build():
     for item in references:
         p=para(item['reference']);p.paragraph_format.alignment=WD_ALIGN_PARAGRAPH.LEFT
     page();marked('APÊNDICE A Verificação técnica do demonstrador')
-    para('O demonstrador está em prototype/ no repositório aloisiocosta-professor/trama-ide-web. Os testes usam dados de exemplo, sem registros de pessoas participantes. Os números abaixo representam verificações de software, não quantidade de estudantes.')
-    head('Cenários e resultados',2)
-    para('A execução inicial 39083293325 do GitHub Actions corresponde ao commit 5cf946e5a77439c3c41759536c006d6d8a2e3810. Nela passaram 28 verificações Java e cinco testes Python do gerador. A execução 39104951676 corresponde ao commit 89a84aa3132eb6c369a2dfe7ff2057716fe4b0df e acrescenta nove verificações gráficas de janela, controles, legibilidade, respostas e exportação. Os dois conjuntos são evidências de versões diferentes, preservadas separadamente.')
-    para('O cenário principal cria duas contas, seleciona uma delas, registra uma previsão e executa um depósito de 25 sobre um saldo inicial de 100. O saldo dessa conta passa a 125, enquanto a outra instância mantém seu saldo de 20. Os testes também conferem alias e rejeições; o cenário principal não representa todos os comportamentos possíveis.')
-    head('Como conferir as evidências',2)
-    para('O comando python tools/build_research.py requer JDK 17, Python e xvfb-run para as verificações gráficas em Linux. Os logs, resultados e imagens das execuções citadas estão em docs/research/evidence/ci-5cf946/ e docs/research/evidence/ci-89a84a/. O README do protótipo documenta execução interativa e limitações. A compilação foi verificada no ambiente remoto descrito nos logs.')
-    para('Repositório: https://github.com/aloisiocosta-professor/trama-ide-web/tree/docs/research-bootstrap . Execuções: https://github.com/aloisiocosta-professor/trama-ide-web/actions/runs/39083293325 e https://github.com/aloisiocosta-professor/trama-ide-web/actions/runs/39104951676 .')
-    para('Houve assistência de inteligência artificial na organização textual e no desenvolvimento dos materiais. Cabe aos autores conferir fontes, compreender o funcionamento, revisar o texto e assumir responsabilidade pela entrega. A forma de declaração deve observar as regras da escola.')
+    def records_table(rows):
+        # Own observations and administrative records are not bibliographic arguments.
+        table=d.add_table(rows=0, cols=2)
+        table.autofit=False
+        table.columns[0].width=Cm(3.3)
+        table.columns[1].width=Cm(13.7)
+        table.style='Table Grid'
+        for label,value in rows:
+            cells=table.add_row().cells
+            for cell,text in zip(cells,[label,value]):
+                cell.text=text
+                for p in cell.paragraphs:
+                    p.alignment=WD_ALIGN_PARAGRAPH.LEFT
+                    p.paragraph_format.space_after=Pt(4)
+                    p.paragraph_format.line_spacing=1.5
+            for r in cells[0].paragraphs[0].runs: r.bold=True
+            trPr=table.rows[-1]._tr.get_or_add_trPr()
+            trPr.append(OxmlElement('w:cantSplit'))
+        return table
+    records_table([
+        ('Natureza', 'Registros próprios de testes de software, com contas fictícias e sem participantes. Os números não representam estudantes.'),
+        ('Versão inicial', 'Execução 39083293325; commit 5cf946e5a77439c3c41759536c006d6d8a2e3810. Aprovadas 28 verificações Java e cinco testes Python do gerador. Evidências: docs/research/evidence/ci-5cf946/.'),
+        ('Versão posterior', 'Execução 39104951676; commit 89a84aa3132eb6c369a2dfe7ff2057716fe4b0df. Aprovadas nove verificações de interface e exportação. Evidências: docs/research/evidence/ci-89a84a/. São versões distintas.'),
+        ('Cenários', 'Depósito de 25 sobre 100: saldo 125; outra conta mantém 20. Também foram conferidos dois nomes para a mesma conta e recusas de operações. O conjunto é restrito aos casos testados.'),
+        ('Reprodução', 'Comando: python tools/build_research.py. Requisitos: JDK 17, Python e xvfb-run em Linux. Orientações interativas e limites: prototype/README.md. Ambiente remoto identificado nos logs preservados.'),
+        ('Localização', 'Repositório: https://github.com/aloisiocosta-professor/trama-ide-web/tree/docs/research-bootstrap . Execuções disponíveis na aba Actions pelos números acima.'),
+        ('Autoria e apoio', 'Houve assistência de inteligência artificial na organização textual e nos materiais. Conferência, compreensão e responsabilidade pela entrega cabem aos autores, observadas as regras da escola.')
+    ])
     page();marked('ANEXOS')
-    para('Não foram incorporados documentos de terceiros ao corpo desta versão. O modelo institucional enviado orientou a estrutura e a formatação. As fontes bibliográficas utilizadas estão identificadas nas referências; seus textos integrais não foram reproduzidos.')
+    records_table([
+        ('Modelo', 'A estrutura foi orientada pelo modelo enviado, preservado como paper/modelo-entrega-original.docx.'),
+        ('Fontes externas', 'Os PDFs dos artigos não foram incorporados ao trabalho. A versão efetivamente consultada está identificada nas referências e no registro de leitura.'),
+        ('Identificação', 'Escola, curso específico, alunos, professor e cidade aguardam confirmação. Este arquivo é uma versão para revisão.')
+    ])
     d.core_properties.title=TITLE
     d.core_properties.author=''
     d.core_properties.subject='Projeto Integrador'
