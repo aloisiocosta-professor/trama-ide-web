@@ -1,12 +1,15 @@
 name: Research governance
 on:
   pull_request:
-    types: [opened, synchronize, reopened, ready_for_review]
+    types: [opened, synchronize, reopened, ready_for_review, edited]
     paths:
       - 'docs/research/**'
       - 'docs/session/**'
       - 'AGENTS.md'
-      - '.github/workflows/research-governance.yml'
+      - '.github/**'
+      - 'prototype/**'
+      - 'tools/**'
+      - 'paper/**'
 permissions:
   contents: read
   issues: write
@@ -16,7 +19,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   preserve-and-link:
-    if: github.repository == 'aloisiocosta-professor/trama-ide-web' && github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'docs/research-bootstrap'
+    if: github.repository == 'aloisiocosta-professor/trama-ide-web' && github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
@@ -30,6 +33,8 @@ jobs:
           import json
           import os
           import re
+          import sys
+          from pathlib import Path
           import urllib.error
           import urllib.parse
           import urllib.request
@@ -40,7 +45,6 @@ jobs:
               event = json.load(handle)
           pr = event["pull_request"]
           assert pr["head"]["repo"]["full_name"] == repo
-          assert pr["head"]["ref"] == "docs/research-bootstrap"
           ref = pr["head"]["sha"]
 
           def api(path, data=None):
@@ -63,13 +67,29 @@ jobs:
                   print("GitHub API failure:", error.code, path)
                   raise SystemExit(1) from None
 
-          def content(path):
+          def content(path, commit_ref=ref):
               encoded = urllib.parse.quote(path, safe="/")
-              item = api("/contents/" + encoded + "?ref=" + ref)
+              item = api("/contents/" + encoded + "?ref=" + commit_ref)
               assert item["encoding"] == "base64"
               return base64.b64decode(item["content"])
 
+          Path("tools").mkdir(exist_ok=True)
+          for module in ("research_governance.py", "test_governance.py"):
+              Path("tools", module).write_bytes(content("tools/" + module))
+          sys.path.insert(0, "tools")
+          from research_governance import validate_inventory, conventional
+          import subprocess
+          subprocess.run([sys.executable, "-m", "unittest", "-v", "test_governance"], cwd="tools", check=True)
           manifest = json.loads(content("docs/research/inventario.json"))
+          commit = api("/git/commits/" + ref)
+          tree = api("/git/trees/" + commit["tree"]["sha"] + "?recursive=1")
+          assert not tree.get("truncated"), "Recursive tree truncated; paginate before verification."
+          governed_count = validate_inventory([item["path"] for item in tree["tree"] if item["type"] == "blob"], manifest["files"])
+          print("Inventory completeness verified:", governed_count)
+          original_ref = "9d6b36ad85abbaf190ac7f49fd3b850ed820ea2c"
+          protocol_path = "docs/research/Protocolo-UML-Java-v0.1.md"
+          assert content(protocol_path) == content(protocol_path, original_ref), "Original protocol changed."
+          print("Original protocol preserved against pinned commit:", original_ref)
           for item in manifest["files"]:
               actual = hashlib.sha256(content(item["path"])).hexdigest()
               assert actual == item["sha256"], "Hash mismatch: " + item["path"]
@@ -79,7 +99,7 @@ jobs:
           assert len(commits) < 100, "Paginate commit validation before expanding this PR."
           for commit in commits:
               title = commit["commit"]["message"].splitlines()[0]
-              assert re.match(r"^(feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert)(\([^)]+\))?!?: .+", title), title
+              assert conventional(title), title
           assert re.search(r"#(1|14)\b", pr.get("body") or ""), "PR must reference governance or parent issue."
           print("Conventional Commits verified:", len(commits))
 
@@ -89,6 +109,8 @@ jobs:
           assert children and all(isinstance(n, int) and n > 1 and n != pr["number"] for n in children)
           existing = api("/issues/1/sub_issues?per_page=100")
           linked = {item["number"] for item in existing}
+          if children - linked and pr["head"]["ref"] != "docs/research-bootstrap":
+              raise AssertionError("Missing native hierarchy; configure it through the bootstrap PR.")
           for number in sorted(children - linked):
               child = api("/issues/" + str(number))
               assert "pull_request" not in child

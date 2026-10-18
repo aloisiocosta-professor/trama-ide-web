@@ -71,3 +71,7 @@ Delimitação inicial do problema e comparação de alternativas (#2–#4), apro
 ## Rastreabilidade
 
 Toda interação final: registro em docs/session, commit convencional, inventário atualizado, PR vinculado e verificação remota. Regra já autorizada e persistida em AGENTS.md. PR atual: #15.
+
+## Criterio final confirmado pelo autor — 18/10/2026
+
+A meta so sera declarada alcancada quando a issue principal e todas as suas sub-issues/descendentes do escopo estiverem fechadas com state_reason=completed, apos evidencia dos criterios respectivos. Estado open, closed/not_planned, exclusao de tarefa ou mera publicacao de arquivo nao satisfazem esse criterio. O fechamento deve ser conferido no remoto. Este registro nao autoriza fechar tarefas que ainda dependem de pesquisa, participacao do autor ou decisao externa.

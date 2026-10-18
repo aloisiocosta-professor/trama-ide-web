@@ -1,0 +1,25 @@
+{
+  "status": "pass",
+  "checks": 28,
+  "educational_participants": 0,
+  "scope": "deterministic technical validation only",
+  "timestamp_utc": "2026-10-18T00:35:16.987288+00:00",
+  "compiler": "javac 17.0.20.1",
+  "runtime": "openjdk version \"17.0.20.1\" 2026-08-18\nOpenJDK Runtime Environment Temurin-17.0.20.1+1 (build 17.0.20.1+1)\nOpenJDK 64-Bit Server VM Temurin-17.0.20.1+1 (build 17.0.20.1+1, mixed mode, sharing)",
+  "os": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+  "generator_tests": 5,
+  "source_hashes": {
+    "prototype/src/BankAccount.java": "9525948de63889adbd7f3cdc043fb719deef43c99d8b9f0ca17e0a017627578f",
+    "prototype/src/LabApp.java": "ccaab125a08bf54e5bf1b063a5f642c5cdd9fb3b078912bb07a07d9d07692f7a",
+    "prototype/src/LabChecks.java": "b85a790f1f4f39a61a467a3e1fc71cbb9e3e5856b5796e33f1d33aa5e5727399",
+    "prototype/src/LabPanel.java": "5a77b8c7f4a5be366fb428562c4c224d31189ce96749b2925087484665d6ae81",
+    "prototype/src/SourceMap.java": "1aa1b90d6b5cbb55a253a3def7b72fe4e2b6e82c4d5a968df95740c87128eac2",
+    "prototype/src/TraceEngine.java": "983f9c5387bf30901cc00328be6e885afb0a6323478a7588eb83b0ec87236882"
+  },
+  "limits": [
+    "No participants",
+    "No learning effects measured",
+    "Offscreen UI only",
+    "Restricted fixture, not full IDE"
+  ]
+}

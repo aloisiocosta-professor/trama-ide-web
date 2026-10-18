@@ -25,3 +25,9 @@ O workflow research-governance configura relações de #2–#14 como filhos de #
 
 ## Limite das verificações
 Verificação de hash demonstra preservação do protocolo; não valida cientificamente seu conteúdo. Workflow de hierarquia demonstra vínculos; não aprova pesquisa, ética ou manuscrito.
+
+## Correcao de verificacoes — 18/10/2026
+
+Os hashes do inventario medem consistencia interna do head. A preservacao historica do protocolo e uma verificacao separada contra o commit fixo 9d6b36ad85abbaf190ac7f49fd3b850ed820ea2c. O workflow passa a conferir completude do conjunto governado, inclui templates e codigo nos gatilhos, reexecuta em edited e verifica PRs do mesmo repositorio em outras branches. Apenas a mutacao de relacoes de issues fica limitada a branch bootstrap.
+
+Aceite final: issue principal e descendentes fechados como completed, com evidencia; ver GOAL.md. Checks estruturais nao provam esse fechamento nem aprovacao cientifica.
