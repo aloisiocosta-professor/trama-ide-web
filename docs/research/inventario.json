@@ -1,5 +1,5 @@
 {
-  "version": "0.13.1",
+  "version": "0.14",
   "scope": "Arquivos do projeto produzidos nesta sessão; histórico editorial e protocolo integral",
   "local_date": "2026-10-18",
   "timezone": "America/Fortaleza",
@@ -46,8 +46,8 @@
     },
     {
       "path": "docs/research/README.md",
-      "sha256": "4134b5bfedc085b23b3c7f9628b37f1db0c5f5b56aaa367aecc3cf86177ac0ae",
-      "bytes": 3252
+      "sha256": "4b8bd8a006d5dc7306d88c41e1bb1651f42a54af1ea1fd03f98a281c943b7bd7",
+      "bytes": 3897
     },
     {
       "path": "docs/research/ROADMAP.md",
@@ -58,6 +58,11 @@
       "path": "docs/research/auditoria-fontes.md",
       "sha256": "175ba9a6601b75dbd54000a151cafe88c090c540708f6e1a5a96e39169850a8e",
       "bytes": 3399
+    },
+    {
+      "path": "docs/research/auditoria-recorte-temporal.json",
+      "sha256": "5420a9d0ce153b4eb4a82715ab8648def57b74f98e684a8f2f705476fb4c392d",
+      "bytes": 1345
     },
     {
       "path": "docs/research/bibliografia.csv",
@@ -100,6 +105,11 @@
       "bytes": 896
     },
     {
+      "path": "docs/research/criterio-temporal-entrega.md",
+      "sha256": "53ac9fc3a8293acf9e37c0c677c5315f3fa24e19b924abcae3af73c0a8350500",
+      "bytes": 1946
+    },
+    {
       "path": "docs/research/decisoes.md",
       "sha256": "ca6f5bffbbb6e530d7de4cda5611b9b6e5087fc733f4d8e067dfabd010d386c7",
       "bytes": 1544
@@ -111,13 +121,13 @@
     },
     {
       "path": "docs/research/entrega-integrador-2026-10.md",
-      "sha256": "2de5d310dfe39ef2d23c19868678fa4f8b3373cbddd7382a032dc171daf65343",
-      "bytes": 6551
+      "sha256": "3bd5350c53a97430b637fc3934c9d197480431eea0fc7eff7b1e4a8954ee39a6",
+      "bytes": 6865
     },
     {
       "path": "docs/research/escrita-abcd-feynman.md",
-      "sha256": "811ad1e5469ff7a18dabdd83de5d31f1fadb3e2501f5257304c282594a0534ae",
-      "bytes": 6621
+      "sha256": "013282733f2ecb322156670a02c63d7e942a940b43f85a1705ee6aaa49e5f148",
+      "bytes": 3156
     },
     {
       "path": "docs/research/etica-dados.md",
@@ -266,8 +276,8 @@
     },
     {
       "path": "docs/research/leitura-integral-fontes.md",
-      "sha256": "697f6a32b5fee00ca5691727ad35022b0a09f0ea7508c95b1449fe3a2e199b89",
-      "bytes": 8124
+      "sha256": "39cde4db909f3acdc4a4df5dd3cadaa5e9395b6269970cf7884806fa2a2d4d03",
+      "bytes": 8259
     },
     {
       "path": "docs/research/matriz-evidencias.csv",
@@ -370,14 +380,24 @@
       "bytes": 6593
     },
     {
+      "path": "docs/session/2026-10-18-18-reprovacao-recorte-temporal.md",
+      "sha256": "6d64841b5f3d659bb0a00611db941d07299740f9c165dbdb3186adea3cf34cd8",
+      "bytes": 4174
+    },
+    {
+      "path": "paper/README.md",
+      "sha256": "b38e536655a6f1239ebdb9fa93ab91865bd5f6e2e2c242dd978d45f16e7ea733",
+      "bytes": 1916
+    },
+    {
       "path": "paper/auditoria-paragrafos-abcd.json",
-      "sha256": "d201cc2c8ee34255ed0c3a60a094a9d0574a906d957b3d74ae6cbd63cac3eba4",
-      "bytes": 12704
+      "sha256": "002212099c5c15bbd6c055272cf4d4cab66d89bc82265b1aeea0926d29721774",
+      "bytes": 12778
     },
     {
       "path": "paper/auditoria-paragrafos-abcd.md",
-      "sha256": "4148c1b0918a7836b1b187bbe597045c0d089c8f5f3ded4a9da8bc300d17c375",
-      "bytes": 9057
+      "sha256": "91b9fd80b42c47253f855f92de9eaf1432b1ae2b0798b0b504a2a218f67ce244",
+      "bytes": 9104
     },
     {
       "path": "paper/manuscrito-preliminar.pdf",
@@ -386,8 +406,8 @@
     },
     {
       "path": "paper/manuscrito.md",
-      "sha256": "ccdc4fa4ab800b17d398f96006dfa4eb43be29fc8bf6eb588c737c06fea7f8b1",
-      "bytes": 13301
+      "sha256": "6e326dcacb5977e018900e8fcb0cc5aa8d8f99c9858d5a5900b426b992c1da00",
+      "bytes": 13568
     },
     {
       "path": "paper/modelo-entrega-original.docx",
@@ -416,8 +436,8 @@
     },
     {
       "path": "paper/secoes-revisadas-abcd.md",
-      "sha256": "b4b7ddb6fb8d50b528dea8efe6c35246f97be88edf9fab9cbf14b198dc704e7d",
-      "bytes": 8796
+      "sha256": "915fa7daa26e93c3dae147da9149397cc9affe46664f9289fdb9dee3a99655e3",
+      "bytes": 8843
     },
     {
       "path": "prototype/README.md",

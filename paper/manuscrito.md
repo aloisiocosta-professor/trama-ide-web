@@ -1,3 +1,5 @@
+> **HISTÓRICO — NÃO ENTREGAR.** Esta versão contém referências anteriores a 2016 e não atende ao recorte vigente. A entrega ativa, limitada a 2021–2026, está indicada em [README.md](README.md). Texto preservado como registro da versão técnica anterior.
+
 # Correspondências entre UML, código Java e estado de objetos: um instrumento experimental e sua verificação técnica
 
 **Versão preliminar 0.1, 18 de outubro de 2026. Autoria, afiliação e veículo a confirmar pelo autor. Não submetido. A avaliação educacional não foi realizada.**

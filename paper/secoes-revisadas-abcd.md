@@ -1,6 +1,6 @@
 # Seções revisadas após leitura integral
 
-Convenção editorial: A — afirmação; B — base com citação indireta; C — conexão com o projeto; D — desdobramento ou limite. A separação das quatro partes está em auditoria-paragrafos-abcd.json. Páginas citadas referem-se aos PDFs efetivamente lidos.
+Convenção editorial: A — Abertura (ideia); B — Base (evidência com citação indireta); C — Conteúdo (análise e conexão com o projeto); D — Desfecho (síntese ou limite). A separação das quatro partes está em auditoria-paragrafos-abcd.json. Páginas citadas referem-se aos PDFs efetivamente lidos.
 
 # 1 INTRODUÇÃO
 

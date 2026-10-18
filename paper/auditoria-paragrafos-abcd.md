@@ -1,6 +1,6 @@
 # Auditoria editorial de cada parágrafo ABCD
 
-18 parágrafos argumentativos; duas versões integralmente lidas. Convenção editorial: A — afirmação; B — base com citação indireta; C — conexão; D — desdobramento ou limite. A leitura crítica e os limites estão em [leitura-integral-fontes.md](../docs/research/leitura-integral-fontes.md). Esta decomposição permite conferir a redação; não representa aprovação científica independente.
+18 parágrafos argumentativos; duas versões integralmente lidas. Convenção editorial: A — Abertura (ideia); B — Base (evidência com citação indireta); C — Conteúdo (análise e conexão); D — Desfecho (síntese ou limite). A leitura crítica e os limites estão em [leitura-integral-fontes.md](../docs/research/leitura-integral-fontes.md). Esta decomposição permite conferir a redação; não representa aprovação científica independente.
 
 ## I1 — R2024, PDF p. 2, 9, 48
 

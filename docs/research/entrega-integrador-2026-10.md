@@ -37,7 +37,7 @@ O modelo não declara obrigatoriedade de experimento com estudantes, tamanho mí
 
 ## Versão preparada
 
-paper/projeto-integrador-versao-revisao.docx contém capa, identificação, sumário, texto, seis referências e apêndice técnico. Tem 11 páginas na renderização conferida. Campos de escola, curso, alunos, professor e cidade permanecem visíveis como a confirmar. Não está liberado como entrega final; revisão humana das fontes, identificação e confirmação do recorte pelo professor são pendências. O texto não alega coleta com estudantes, eficácia educacional, venda, aprovação ou publicação.
+paper/projeto-integrador-versao-revisao.docx contém capa, identificação, sumário, texto, duas referências ativas (2024 e 2026) e apêndice técnico. Tem 11 páginas na renderização conferida. Campos de escola, curso, alunos, professor e cidade permanecem visíveis como a confirmar. Não está liberado como entrega final; revisão humana das fontes, identificação e confirmação do recorte pelo professor são pendências. O texto não alega coleta com estudantes, eficácia educacional, venda, aprovação ou publicação.
 
 ## Cronograma proposto e pontos de controle
 
@@ -64,3 +64,7 @@ O aceite global permanece: issue principal e todos os descendentes fechados como
 ## Revisão editorial ABCD e Feynman
 
 Em 18/10/2026, as quatro seções solicitadas foram reescritas com roteiro editorial ABCD explicitado, explicações simples e citações indiretas. Ver escrita-abcd-feynman.md. O DOCX continua com 11 páginas; sumário e renderização reconferidos. As pendências de identificação e avaliação humana continuam abertas.
+
+## Recorte temporal após reprovação
+
+Somente 2021–2026 na entrega ativa, sem referência anterior a 2016. Ver criterio-temporal-entrega.md e o índice paper/README.md. Os manuscritos preliminares com referências antigas são históricos e não devem ser entregues como a versão atual.
