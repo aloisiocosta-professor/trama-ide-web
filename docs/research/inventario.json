@@ -1,5 +1,5 @@
 {
-  "version": "0.9",
+  "version": "0.10",
   "scope": "Arquivos do projeto produzidos nesta sessão; histórico editorial e protocolo integral",
   "local_date": "2026-10-18",
   "timezone": "America/Fortaleza",
@@ -31,8 +31,8 @@
     },
     {
       "path": "docs/research/GOAL.md",
-      "sha256": "76e211920465e997aa27eaccc0e42f607723abc5e54ffe8657f9cc55584cad71",
-      "bytes": 6388
+      "sha256": "0af1d832e8b2ae5ab2f86918768dc7c8ab6d9441fce3c7fce5323e28311fb185",
+      "bytes": 6778
     },
     {
       "path": "docs/research/GOVERNANCA.md",
@@ -46,8 +46,8 @@
     },
     {
       "path": "docs/research/README.md",
-      "sha256": "adca8a5f2e8877d4f616aea10da834cfc071daf0c8e579b07b521ce4bc72962a",
-      "bytes": 2039
+      "sha256": "cecce36d29bd1aecaa50f44fcf5dd2dcd2341ea6acbb896a335bda9e6f31dc56",
+      "bytes": 2327
     },
     {
       "path": "docs/research/ROADMAP.md",
@@ -103,6 +103,11 @@
       "path": "docs/research/defesa-roteiro.md",
       "sha256": "1f81bb2f4f26e1201b99cc5b6f4e6dbc207de3e2fd42f11bf8e70fd805a6d23f",
       "bytes": 2592
+    },
+    {
+      "path": "docs/research/entrega-integrador-2026-10.md",
+      "sha256": "9bc8c02e464c16fabe40a80d0fbb5b5f0f577f7a6412b45a8297ccaed1eae2a7",
+      "bytes": 6187
     },
     {
       "path": "docs/research/etica-dados.md",
@@ -320,6 +325,11 @@
       "bytes": 1905
     },
     {
+      "path": "docs/session/2026-10-18-14-modelo-prazo.md",
+      "sha256": "beb4251e46326c08136cd14da6c5c0aca8c70166db5103adfbd16fd211b8995c",
+      "bytes": 2800
+    },
+    {
       "path": "paper/manuscrito-preliminar.pdf",
       "sha256": "70d87135ea92b00254ef4b15b76b1483f1190efd6c0ea7ddcd2908d7e717d73e",
       "bytes": 58480
@@ -328,6 +338,16 @@
       "path": "paper/manuscrito.md",
       "sha256": "ccdc4fa4ab800b17d398f96006dfa4eb43be29fc8bf6eb588c737c06fea7f8b1",
       "bytes": 13301
+    },
+    {
+      "path": "paper/modelo-entrega-original.docx",
+      "sha256": "845b66af999c0231eb0af8087a32c17e33d8540ac3f8d53c35f0516b9e5c21db",
+      "bytes": 400640
+    },
+    {
+      "path": "paper/projeto-integrador-versao-revisao.docx",
+      "sha256": "91fd0345ed1e28b104a550c5754899bfdc0c9531e245ad11ac7c8bcf762359c4",
+      "bytes": 42912
     },
     {
       "path": "prototype/README.md",
@@ -388,6 +408,11 @@
       "path": "tools/audit_completion.py",
       "sha256": "f49747c3ac8c911aad85bc11fac4f41a99cfbd2061f3bab6177008b41f64253f",
       "bytes": 1471
+    },
+    {
+      "path": "tools/build_integrador.py",
+      "sha256": "9ab7ec967869b17838d81b62d6ce6273f45d7f534e8d398ea44552b496992689",
+      "bytes": 17247
     },
     {
       "path": "tools/build_manuscript_pdf.py",

@@ -34,3 +34,7 @@ Estado: delimitacao e objetivos iniciais e prototipo minimo concluidos nas issue
 - [Preparacao editorial](submissao-checklist.md)
 
 Aceite final somente com a issue principal e todos os descendentes fechados como completed, conforme GOAL.md. O estado real e conferido em completion-audit.json, quando gerado; checks tecnicos nao equivalem a esse aceite.
+
+## Entrega do curso
+
+Prazo: 31/10/2026. [Requisitos do modelo e cronograma](entrega-integrador-2026-10.md). [Versão de revisão em Word](../../paper/projeto-integrador-versao-revisao.docx). Identificação e revisão pelo autor/professor pendentes; não é declaração de aprovação.

@@ -75,3 +75,7 @@ Toda interação final: registro em docs/session, commit convencional, inventár
 ## Criterio final confirmado pelo autor — 18/10/2026
 
 A meta so sera declarada alcancada quando a issue principal e todas as suas sub-issues/descendentes do escopo estiverem fechadas com state_reason=completed, apos evidencia dos criterios respectivos. Estado open, closed/not_planned, exclusao de tarefa ou mera publicacao de arquivo nao satisfazem esse criterio. O fechamento deve ser conferido no remoto. Este registro nao autoriza fechar tarefas que ainda dependem de pesquisa, participacao do autor ou decisao externa.
+
+## Prazo e modelo do curso confirmados em 18/10/2026
+
+Entregar a versão final do Projeto Integrador até **31/10/2026**, America/Fortaleza, conforme o modelo enviado pelo autor. Ver [requisitos e cronograma](entrega-integrador-2026-10.md). A entrega do curso e a conclusão da meta ampliada têm evidências distintas; não se presume publicação ou defesa concluída no prazo do curso.
