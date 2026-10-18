@@ -1,5 +1,5 @@
 {
-  "version": "0.13",
+  "version": "0.13.1",
   "scope": "Arquivos do projeto produzidos nesta sessão; histórico editorial e protocolo integral",
   "local_date": "2026-10-18",
   "timezone": "America/Fortaleza",
@@ -276,8 +276,8 @@
     },
     {
       "path": "docs/research/matriz-fontes-2016-2026.csv",
-      "sha256": "025f86cefed6cfdcf7afbc562b71ce479bbbed06534727987159c16036ef7906",
-      "bytes": 2674
+      "sha256": "514010978bba60fc4d1c276449194bf0fa98ce9bca36b0b9a1adf171ab31153e",
+      "bytes": 2668
     },
     {
       "path": "docs/research/pergunta-objetivos.md",
@@ -366,8 +366,8 @@
     },
     {
       "path": "docs/session/2026-10-18-17-leitura-integral-abcd.md",
-      "sha256": "015835075bd0df8f6ebdf80b71834737849799a661f457af236aced57cd437ba",
-      "bytes": 5949
+      "sha256": "bba9788ee1401fe35f0d0848a0729e34b6eafd0b01327f568cefbec1ef4b0f11",
+      "bytes": 6593
     },
     {
       "path": "paper/auditoria-paragrafos-abcd.json",

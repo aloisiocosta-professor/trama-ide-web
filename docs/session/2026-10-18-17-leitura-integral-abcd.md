@@ -18,6 +18,10 @@ O andamento comunicado consolidou acesso parcial nas fontes excluídas, distinç
 
 18/18 blocos com quatro partes e citação indireta; correspondência das passagens examinada editorialmente; duas versões lidas completas e identificadas; duas referências ativas dentro de 2021–2026; fontes excluídas ausentes da entrega ativa; dois objetivos específicos; sumário conferido contra páginas reais; todas as 11 páginas da renderização final inspecionadas, sem página vazia, corte ou sobreposição. Corrigida a quebra de um objetivo entre páginas, mantendo os parágrafos inteiros. Detalhes e hash do DOCX em docs/research/verificacao-leitura-abcd.json. Não se declara aprovação científica independente ou validação de compreensão por leigos.
 
+## Verificação remota e correção de integridade
+
+No commit ef24d86e0ecf90a6210ff261273942662aade18c, o teste técnico remoto passou (run 39126501387), mas a governança (run 39126501373) detectou divergência de hash no CSV. A transferência textual normalizou CRLF para LF, enquanto o inventário havia calculado bytes CRLF. Corrigido o arquivo local para LF e recalculado seu hash, sem alterar os dados da matriz. Atualizados o inventário e este registro em commit convencional de correção. As conferências científicas e o DOCX permanecem os mesmos; a integridade remota será novamente conferida antes do encerramento da resposta.
+
 ## Passo, resultado esperado e critério para avançar
 
 Passo executado: leitura e adequação editorial da fundamentação ativa, vinculado às etapas de literatura (#3), manuscrito (#12) e auditoria (#13), com preservação (#14). Resultado: entrega para revisão e rastreabilidade de cada parágrafo. Critério editorial atendido: só citar obras escolhidas previamente e integralmente lidas, com versão, páginas, quatro partes e limites verificáveis. Critérios restantes das issues não foram marcados como atendidos por essa alteração: leitura/revisão humana, correspondência ao escopo completo da pesquisa, consulta a correções pertinentes, identificação e exigências institucionais continuam pendentes. Nenhuma issue foi fechada. Meta global permanece aberta; prazo do curso mantido em 31/10/2026.
