@@ -1,0 +1,103 @@
+name: Research governance
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+    paths:
+      - 'docs/research/**'
+      - 'docs/session/**'
+      - 'AGENTS.md'
+      - '.github/workflows/research-governance.yml'
+permissions:
+  contents: read
+  issues: write
+  pull-requests: read
+concurrency:
+  group: research-governance
+  cancel-in-progress: false
+jobs:
+  preserve-and-link:
+    if: github.repository == 'aloisiocosta-professor/trama-ide-web' && github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'docs/research-bootstrap'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Verify artifacts and native sub-issues
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: python
+        run: |
+          import base64
+          import hashlib
+          import json
+          import os
+          import re
+          import urllib.error
+          import urllib.parse
+          import urllib.request
+
+          repo = os.environ["GITHUB_REPOSITORY"]
+          assert repo == "aloisiocosta-professor/trama-ide-web"
+          with open(os.environ["GITHUB_EVENT_PATH"], encoding="utf-8") as handle:
+              event = json.load(handle)
+          pr = event["pull_request"]
+          assert pr["head"]["repo"]["full_name"] == repo
+          assert pr["head"]["ref"] == "docs/research-bootstrap"
+          ref = pr["head"]["sha"]
+
+          def api(path, data=None):
+              request = urllib.request.Request(
+                  "https://api.github.com/repos/" + repo + path,
+                  data=None if data is None else json.dumps(data).encode("utf-8"),
+                  headers={
+                      "Authorization": "Bearer " + os.environ["GH_TOKEN"],
+                      "Accept": "application/vnd.github+json",
+                      "X-GitHub-Api-Version": "2026-03-10",
+                      "Content-Type": "application/json",
+                      "User-Agent": "research-governance",
+                  },
+                  method="GET" if data is None else "POST",
+              )
+              try:
+                  with urllib.request.urlopen(request, timeout=30) as response:
+                      return json.load(response)
+              except urllib.error.HTTPError as error:
+                  print("GitHub API failure:", error.code, path)
+                  raise SystemExit(1) from None
+
+          def content(path):
+              encoded = urllib.parse.quote(path, safe="/")
+              item = api("/contents/" + encoded + "?ref=" + ref)
+              assert item["encoding"] == "base64"
+              return base64.b64decode(item["content"])
+
+          manifest = json.loads(content("docs/research/inventario.json"))
+          for item in manifest["files"]:
+              actual = hashlib.sha256(content(item["path"])).hexdigest()
+              assert actual == item["sha256"], "Hash mismatch: " + item["path"]
+          print("Artifact hashes verified:", len(manifest["files"]))
+
+          commits = api("/pulls/" + str(pr["number"]) + "/commits?per_page=100")
+          assert len(commits) < 100, "Paginate commit validation before expanding this PR."
+          for commit in commits:
+              title = commit["commit"]["message"].splitlines()[0]
+              assert re.match(r"^(feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert)(\([^)]+\))?!?: .+", title), title
+          assert re.search(r"#(1|14)\b", pr.get("body") or ""), "PR must reference governance or parent issue."
+          print("Conventional Commits verified:", len(commits))
+
+          children = set(range(2, 15))
+          existing = api("/issues/1/sub_issues?per_page=100")
+          linked = {item["number"] for item in existing}
+          for number in sorted(children - linked):
+              child = api("/issues/" + str(number))
+              assert "pull_request" not in child
+              api("/issues/1/sub_issues", {"sub_issue_id": child["id"]})
+              print("Linked sub-issue:", number)
+          verified = api("/issues/1/sub_issues?per_page=100")
+          assert children.issubset({item["number"] for item in verified})
+          for number in sorted(children):
+              parent = api("/issues/" + str(number) + "/parent")
+              assert parent["number"] == 1
+              assert parent["repository_url"].endswith("/" + repo)
+          print("Native issue hierarchy verified: parent #1, children #2–#14.")
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as summary:
+              summary.write("Artifact hashes and Conventional Commits verified.\n\n")
+              summary.write("Native sub-issues #2–#14 verified under #1. No scientific step was closed.\n")
