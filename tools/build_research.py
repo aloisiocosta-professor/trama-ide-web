@@ -37,17 +37,22 @@ def main():
     sources=sorted((ROOT/'prototype/src').glob('*.java'))
     compile_log=run(['javac','--release','17','-encoding','UTF-8','-d',str(classes),*[str(p) for p in sources]])
     test_log=run(['java','-Djava.awt.headless=true','-cp',str(classes),'LabChecks',str(ROOT/'prototype/src/BankAccount.java'),str(OUT)])
+    if not shutil.which('xvfb-run'):
+        raise SystemExit('xvfb-run necessario para o ensaio grafico automatizado; nenhum pacote sera instalado.')
+    ui_log=run(['xvfb-run','-a','-s','-screen 0 1600x1000x24','java','-cp',str(classes),'LabUiSmoke',str(ROOT/'prototype/src/BankAccount.java'),str(OUT)])
     result=json.loads((OUT/'technical-results.json').read_text())
+    ui_result=json.loads((OUT/'ui-smoke-results.json').read_text())
     result.update({
         'timestamp_utc':datetime.now(timezone.utc).isoformat(),
         'compiler':compiler,'runtime':runtime,'os':platform.platform(),
         'generator_tests':5,
+        'ui_smoke_checks':ui_result['checks'],
         'source_hashes':{p.relative_to(ROOT).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in sources},
-        'limits':['No participants','No learning effects measured','Offscreen UI only','Restricted fixture, not full IDE'],
+        'limits':['No participants','No learning effects measured','Automated UI, not usability study','Restricted fixture, not full IDE'],
     })
     (OUT/'technical-results.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
-    (OUT/'test-log.txt').write_text(tests+'\n'+compile_log+'\n'+test_log,encoding='utf-8')
+    (OUT/'test-log.txt').write_text(tests+'\n'+compile_log+'\n'+test_log+'\n'+ui_log,encoding='utf-8')
     (OUT/'README.md').write_text('# Resultados tecnicos\n\nExecucao de testes deterministas e renderizacao fora da tela. Zero participantes.\nNao sao resultados de aprendizagem, piloto educacional ou usabilidade.\n',encoding='utf-8')
-    print(json.dumps({'status':'pass','java_checks':result['checks'],'generator_tests':5,'participants':0}))
+    print(json.dumps({'status':'pass','java_checks':result['checks'],'generator_tests':5,'ui_smoke_checks':ui_result['checks'],'participants':0}))
 
 if __name__=='__main__':main()

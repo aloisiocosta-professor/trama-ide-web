@@ -52,6 +52,9 @@ jobs:
             validation/test-log.txt
             validation/linked.png
             validation/plain.png
+            validation/ui-smoke.png
+            validation/ui-smoke-results.json
+            validation/ui-session.tsv
             validation/README.md
           if-no-files-found: error
           retention-days: 30

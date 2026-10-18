@@ -25,6 +25,8 @@ public final class LabPanel extends JPanel {
     public LabPanel(String actualSource, boolean linked) {
         this.linked = linked;
         this.sourceMap = new SourceMap(actualSource);
+        name.setName("reference-name"); amount.setName("amount"); targets.setName("target");
+        prediction.setName("prediction"); justification.setName("explanation");
         setLayout(new BorderLayout(12, 12));
         setBorder(BorderFactory.createEmptyBorder(16, 16, 16, 16));
         setBackground(new Color(244, 247, 251));
