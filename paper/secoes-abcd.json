@@ -1,0 +1,51 @@
+{
+  "introducao": [
+    "Relacionar uma classe aos objetos criados durante a execução é o problema técnico deste Projeto Integrador. Kölling et al. (2003) descrevem o BlueJ como um ambiente de ensino que aproxima classes e interação com objetos. No exemplo deste trabalho, a classe BankAccount descreve o que uma conta pode fazer; cada conta criada é um objeto, com seu próprio saldo. Essa distinção orienta a construção de um demonstrador que torna essas relações observáveis.",
+    "As três vistas do demonstrador apresentam informações diferentes sobre o mesmo exemplo. Ainsworth (2006) propõe considerar o desenho das representações, suas funções e as tarefas necessárias para relacioná-las. Aqui, o cartão UML resume a estrutura, o código mostra como a operação foi escrita e a vista de objetos mostra os valores registrados. O projeto usa destaques para indicar a correspondência entre essas vistas, sem presumir que exibi-las juntas garanta compreensão.",
+    "A pergunta deste recorte é: como implementar correspondências entre UML, código Java e estado dos objetos e verificar seu funcionamento nos cenários definidos? O demonstrador já permite executar operações e comparar estados antes e depois das chamadas. Por exemplo, um depósito deve alterar o saldo da conta que recebeu a operação, mantendo o saldo de outra instância independente. Esse comportamento pode ser conferido por testes de software com valores conhecidos.",
+    "O alcance da entrega é técnico e documental. As evidências do projeto identificam verificações de software e nenhum participante na avaliação. Portanto, observar a mudança correta de saldo demonstra o comportamento do cenário exercitado, mas não demonstra que estudantes aprenderam com a ferramenta. O trabalho apresenta a implementação, seus fundamentos e seus limites; a avaliação educacional permanece uma etapa futura."
+  ],
+  "metodologia": [
+    "O trabalho combina levantamento bibliográfico exploratório, análise documental e desenvolvimento com verificação técnica. Hevner et al. (2004) discutem construção e avaliação de artefatos. Aqui, construir é implementar o demonstrador; verificar é comparar o comportamento com resultados esperados. Essa aproximação não conclui a avaliação educacional.",
+    "O levantamento reuniu fontes sobre BlueJ, visualização de programas e múltiplas representações, registradas na matriz de evidências. Foram consultadas seções de originais e, em algumas fontes, somente resumos e metadados. Esses materiais orientaram as decisões do demonstrador. A busca exploratória não foi uma revisão sistemática nem comprova novidade ampla.",
+    "A implementação utiliza BankAccount, com saldo decimal, depósito, retirada e consulta. Os arquivos-fonte mostram um executor com objetos reais em Java e registros anteriores e posteriores às chamadas. Assim, conserva-se o estado de antes e de depois da operação. Marcadores relacionam membros a regiões de código, sem rastrear cada instrução ou aceitar Java arbitrário.",
+    "A verificação usa cenários com valores conhecidos. No teste gráfico preservado, uma conta passa de 100 para 125 após receber 25, enquanto outra mantém 20. Também foram conferidas referências compartilhadas, rejeições, equivalência do executor e exportação, conforme o Apêndice A. Cada aprovação sustenta apenas o comportamento exercitado.",
+    "Os logs e resultados identificam as versões verificadas. A execução inicial registrou 28 verificações Java e cinco testes Python aprovados; outra incluiu nove verificações gráficas aprovadas, com zero participantes. Esses números contam testes do programa, não alunos. Aprendizagem, usabilidade e interesse comercial permanecem sem avaliação própria."
+  ],
+  "referencial": [
+    {
+      "titulo": "2.1 Classes objetos e referências",
+      "paragrafos": [
+        "A distinção entre classe e objeto orienta o exemplo adotado. Kölling et al. (2003) descrevem recursos do BlueJ que permitem criar objetos e interagir com eles. Para acompanhar o demonstrador, basta distinguir três elementos: a classe descreve a estrutura e as operações, o objeto é uma conta criada e o estado é o conjunto de valores dessa conta. Assim, duas contas da mesma classe podem ter saldos diferentes sem contradição.",
+        "Uma referência permite acessar um objeto e não deve ser confundida com ele. Os testes do projeto distinguem instâncias independentes de referências compartilhadas. Dois nomes podem apontar para a mesma conta; nesse caso, consultar qualquer um deles revela a mudança realizada no único objeto. Esse exemplo explica por que contar nomes não basta para contar objetos e por que a identidade precisa ser verificada."
+      ]
+    },
+    {
+      "titulo": "2.2 Como relacionar as representações",
+      "paragrafos": [
+        "Relacionar as vistas faz parte da tarefa de compreender o exemplo. Ainsworth (2006) examina fatores que influenciam o uso de múltiplas representações e as tarefas necessárias para interpretá-las. No demonstrador, a pergunta concreta é qual trecho do código e qual objeto correspondem ao método selecionado no cartão UML. Os destaques foram projetados para indicar essa relação; sua utilidade educacional ainda precisa ser avaliada.",
+        "A atividade realizada com a visualização também merece atenção. Hundhausen, Douglas e Stasko (2002), em uma síntese de estudos de visualização de algoritmos, discutem a importância do modo como os estudantes utilizam esses recursos. O demonstrador permite registrar uma previsão, executar uma operação e explicar o que mudou. Essa sequência é uma decisão de projeto inspirada na literatura, sem transferência automática dos resultados daqueles estudos para esta ferramenta."
+      ]
+    },
+    {
+      "titulo": "2.3 Antecedentes e contribuição delimitada",
+      "paragrafos": [
+        "A visualização da execução de programas possui antecedentes. Moreno et al. (2004) apresentam o Jeliot 3, e Gestwicki e Jayaraman (2004) descrevem o JIVE, associado à visualização em Java. Essas descrições situam o demonstrador em uma área já existente. Portanto, a contribuição candidata deve ser examinada por suas escolhas específicas e evidências, sem anunciar uma integração inédita apenas por reunir diagrama e execução.",
+        "A escolha específica implementada é oferecer duas condições visuais sobre o mesmo executor. Os fontes e testes preservados mostram as condições linked, com destaques, e plain, sem esse apoio adicional. Em termos simples, muda a indicação visual de correspondência, enquanto as operações e os estados esperados permanecem equivalentes nos cenários testados. Essa organização prepara uma comparação futura, mas não constitui um estudo realizado com estudantes."
+      ]
+    },
+    {
+      "titulo": "2.4 Evidências e alcance das afirmações",
+      "paragrafos": [
+        "A avaliação deve corresponder ao resultado que se pretende afirmar. Hevner et al. (2004) discutem a avaliação de artefatos no contexto de pesquisa em Sistemas de Informação. Aqui, conferir que uma conta passa de 100 para 125 verifica uma operação; verificar aprendizagem exigiria observar a compreensão de pessoas por um procedimento adequado. Essa diferença delimita a interpretação dos resultados disponíveis.",
+        "A comunicação do software deve acompanhar esse alcance. Os registros técnicos comprovam comportamentos exercitados em um exemplo restrito, sem dados de aprendizagem ou de vendas. Por isso, é possível apresentar o recurso como um demonstrador de relações entre classe, código e estado de objetos Java. Afirmar que ele melhora notas, garante compreensão ou tem demanda comercial dependeria de novas evidências."
+      ]
+    }
+  ],
+  "consideracoes": [
+    "Foi desenvolvido um demonstrador que relaciona uma representação estrutural UML, regiões do código Java e estados de objetos. As evidências preservadas registram 28 verificações Java e cinco testes Python aprovados na execução inicial, além de nove verificações gráficas em uma versão posterior. Esses resultados permitem responder à pergunta técnica dentro dos cenários definidos. O Apêndice A identifica as versões, as execuções e os arquivos que permitem conferir essa resposta.",
+    "O exemplo central torna o resultado concreto: uma conta com saldo 100 recebe um depósito de 25 e passa a 125, enquanto outra instância mantém 20. Os testes também diferenciam duas referências para o mesmo objeto de duas instâncias independentes. Assim, o demonstrador torna observáveis relações que o texto e o código descrevem de formas diferentes. O resultado comprovado é o comportamento técnico exercitado, sem inferência de aprendizagem.",
+    "A análise dos antecedentes impede apresentar a simples reunião de diagrama e execução como novidade ampla. A descrição do BlueJ por Kölling et al. (2003) já inclui classes e interação com objetos. O demonstrador deste projeto deve ser examinado pelas correspondências explícitas, pelas duas condições visuais e pela rastreabilidade de seus testes. Essa delimitação permite comunicar o que foi construído sem atribuir ao projeto resultados que pertencem à literatura ou que ainda não foram obtidos.",
+    "Permanecem limites importantes: uma classe de exemplo, mapeamento por marcadores e ausência de avaliação humana de usabilidade e aprendizagem. Os registros técnicos informam zero participantes, portanto não permitem responder se estudantes compreenderiam melhor os conceitos. A continuidade requer revisão das fontes e dos instrumentos, confirmação das condições institucionais e avaliação apropriada. Essas etapas permitirão examinar a utilidade educacional sem confundi-la com a funcionalidade demonstrada."
+  ]
+}

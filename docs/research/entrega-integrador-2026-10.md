@@ -60,3 +60,7 @@ Foi agendada uma execução de revisão para a manhã de 31/10, America/Fortalez
 Escola, nome do curso técnico, alunos, professor e cidade; eventuais exigências complementares do professor, especialmente se aceita o recorte documental e técnico, se exige aplicação com estudantes, apresentação oral, limite de páginas e canal/horário de entrega.
 
 O aceite global permanece: issue principal e todos os descendentes fechados como completed com evidências. Nenhuma issue é encerrada apenas pela adaptação ao modelo.
+
+## Revisão editorial ABCD e Feynman
+
+Em 18/10/2026, as quatro seções solicitadas foram reescritas com roteiro editorial ABCD explicitado, explicações simples e citações indiretas. Ver escrita-abcd-feynman.md. O DOCX continua com 11 páginas; sumário e renderização reconferidos. As pendências de identificação e avaliação humana continuam abertas.

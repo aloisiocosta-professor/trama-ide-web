@@ -38,3 +38,5 @@ Aceite final somente com a issue principal e todos os descendentes fechados como
 ## Entrega do curso
 
 Prazo: 31/10/2026. [Requisitos do modelo e cronograma](entrega-integrador-2026-10.md). [Versão de revisão em Word](../../paper/projeto-integrador-versao-revisao.docx). Identificação e revisão pelo autor/professor pendentes; não é declaração de aprovação.
+
+Revisão de escrita em 18/10/2026: [ABCD e Feynman](escrita-abcd-feynman.md), [seções revisadas](../../paper/secoes-revisadas-abcd.md) e DOCX atualizado. Citações indiretas, evidências e limites preservados; versão ainda em revisão.
