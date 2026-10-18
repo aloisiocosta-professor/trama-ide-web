@@ -1,5 +1,5 @@
 {
-  "version": "0.8",
+  "version": "0.9",
   "scope": "Arquivos do projeto produzidos nesta sessão; histórico editorial e protocolo integral",
   "local_date": "2026-10-18",
   "timezone": "America/Fortaleza",
@@ -313,6 +313,11 @@
       "path": "docs/session/2026-10-18-12-vinculo-pendente.md",
       "sha256": "b9295ee1ac6b59dd117a7d4af104d1b4348cc9e0e5ff9e5a33067848e5f37b5e",
       "bytes": 1153
+    },
+    {
+      "path": "docs/session/2026-10-18-13-contexto-curso.md",
+      "sha256": "7d4083e642e168d90a4feee8547293b2f85a7451beb29e00f3a7d8b64042d911",
+      "bytes": 1905
     },
     {
       "path": "paper/manuscrito-preliminar.pdf",
