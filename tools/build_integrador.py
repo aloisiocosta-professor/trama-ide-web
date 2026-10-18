@@ -11,7 +11,7 @@ from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 
 ROOT = Path(__file__).resolve().parents[1]
-TITLE = 'Correspondências entre UML código Java e estado de objetos'
+TITLE = 'Ferramenta visual para acompanhar objetos em programas Java'
 
 def build():
     sections = json.loads((ROOT/'paper/secoes-abcd.json').read_text())
@@ -92,10 +92,10 @@ def build():
     for paragraph in sections['introducao']: para(paragraph)
     marked('1.1 OBJETIVOS',2)
     marked('1.1.1 Objetivo Geral',3)
-    para('Desenvolver e verificar um demonstrador de correspondências entre uma representação estrutural UML, o código Java e o estado de objetos em cenários delimitados de orientação a objetos.')
+    para('Desenvolver e verificar uma ferramenta visual que mostre como as instruções de um programa Java alteram os dados de contas de exemplo.')
     marked('1.1.2 Objetivos Específicos',3)
-    para('Identificar fundamentos e recursos de ferramentas relacionadas para justificar as correspondências propostas entre classe, código e instâncias.')
-    para('Implementar e verificar os cenários de instâncias independentes, referências compartilhadas e mudanças de estado, registrando os resultados técnicos e suas limitações.')
+    para('Relacionar estudos recentes sobre diagramas e visualização de programas às escolhas da ferramenta.')
+    para('Implementar e testar situações de alteração e compartilhamento de dados, registrando os resultados e os limites observados.')
     marked('1.2 METODOLOGIA',2)
     for paragraph in sections['metodologia']: para(paragraph)
     page();marked('2 REFERENCIAL TEÓRICO')
@@ -105,12 +105,9 @@ def build():
     page();marked('3 CONSIDERAÇÕES FINAIS')
     for paragraph in sections['consideracoes']: para(paragraph)
     page();marked('4 REFERÊNCIAS')
-    manuscript=(ROOT/'paper/manuscrito.md').read_text()
-    refs=manuscript.split('## Referências\n',1)[1]
-    for item in refs.strip().split('\n\n'):
-        item=item.split(' O registro Crossref')[0]
-        if item.startswith('GESTWICKI'): item=item.replace('JIVE: Java interactive visualization environment.', 'JIVE.')
-        p=para(item);p.paragraph_format.alignment=WD_ALIGN_PARAGRAPH.LEFT
+    references=json.loads((ROOT/'paper/referencias-integrador.json').read_text())
+    for item in references:
+        p=para(item['reference']);p.paragraph_format.alignment=WD_ALIGN_PARAGRAPH.LEFT
     page();marked('APÊNDICE A Verificação técnica do demonstrador')
     para('O demonstrador está em prototype/ no repositório aloisiocosta-professor/trama-ide-web. Os testes usam dados de exemplo, sem registros de pessoas participantes. Os números abaixo representam verificações de software, não quantidade de estudantes.')
     head('Cenários e resultados',2)

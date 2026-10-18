@@ -23,25 +23,20 @@ Para aplicar Feynman, foram substituídas ou explicadas expressões técnicas, u
 
 | Seção | Afirmação e base | Conexão simples e desdobramento |
 |---|---|---|
-| Introdução | Relações entre classe e objetos motivam o demonstrador; BlueJ e DeFT fundamentam o recorte | Distinguir descrição da conta, conta criada e saldo; formular pergunta técnica sem prometer ganho educacional |
-| Metodologia | Levantamento, análise documental e construção com testes; aproximação com Hevner et al. | Explicar o que foi construído, qual valor era esperado e qual foi observado; delimitar o alcance dos testes |
+| Introdução | Relações entre classe e objetos motivam o demonstrador; Lu e Alexandru 2023 e Rexigel et al. 2024 fundamentam o recorte | Distinguir descrição da conta, conta criada e saldo; formular pergunta técnica sem prometer ganho educacional |
+| Metodologia | Levantamento, análise documental e construção com testes; aproximação com Johannesson e Perjons 2021 | Explicar o que foi construído, qual valor era esperado e qual foi observado; delimitar o alcance dos testes |
 | Referencial teórico | Conceitos, múltiplas representações e antecedentes documentados | Relacionar cada fundamento ao exemplo e às escolhas de implementação; separar inspiração de resultado próprio |
 | Considerações finais | Resultados das execuções e antecedente BlueJ | Responder à pergunta técnica, explicar o exemplo 100 mais 25 e declarar etapas futuras necessárias |
 
-## Evidências e citações indiretas
+## Evidências e citações indiretas após a atualização temporal
 
-Paráfrases atribuem ideias aos autores sem reproduzir suas frases. Os exemplos de implementação são identificados como resultados do projeto, sem atribuí-los a esses autores. A literatura consultada não é apresentada como experimento realizado pelo projeto.
+Em 18/10/2026, o autor restringiu a base a publicações de 2016–2026, preferindo 2021–2026. A fundamentação ativa do DOCX passou a usar cinco fontes de 2021–2026, incluindo uma publicação de agosto de 2026. As fontes antigas continuam no histórico e nos materiais anteriores; não sustentam a redação atual da entrega.
 
-| Fonte | Uso delimitado nesta revisão | Evidência consultada |
-|---|---|---|
-| Kölling et al. 2003 | Antecedente de classes, criação e interação com objetos; limite à novidade ampla | Texto original, seções 3.1–3.3: https://www.cs.kent.ac.uk/pubs/2003/2190/content.pdf |
-| Ainsworth 2006 | Desenho, funções e tarefas no uso de múltiplas representações | Resumo e partes conceituais do original: https://www.inf.ufpr.br/alexd/REPRESENTACOES_EXTERNAS/Ainsworth_2006.pdf ; DOI 10.1016/j.learninstruc.2006.03.001 |
-| Hundhausen Douglas e Stasko 2002 | Importância das atividades com visualização; sem extrapolar efeito para esta ferramenta | Resumo e discussão 6.1 consultados: https://faculty.cc.gatech.edu/~stasko/papers/jvlc02.pdf ; DOI 10.1006/jvlc.2002.0237 |
-| Hevner et al. 2004 | Construção e avaliação de artefatos; sem alegar ciclo educacional completo | Resumo e registro original: https://aisel.aisnet.org/misq/vol28/iss1/6/ ; DOI 10.2307/25148625 |
-| Moreno et al. 2004 e Gestwicki e Jayaraman 2004 | Antecedentes de visualização, com alcance documental | Registros originais já conferidos na matriz do projeto; DOI 10.1145/989863.989928 e 10.1145/1028664.1028762 |
-| Evidência própria | 28 verificações Java, cinco testes Python e nove verificações gráficas nas versões indicadas | docs/research/evidence/ci-5cf946/ e ci-89a84a/; participantes iguais a zero |
+As paráfrases atribuem aos autores apenas as ideias consultadas. Os resultados da ferramenta permanecem evidências próprias. A matriz em matriz-fontes-2016-2026.csv registra fonte, desenho, acesso real, uso e limites. A pesquisa é exploratória; não se declara cobertura exaustiva de 2016–2026. O recorte se refere ao ano da publicação usada, sem afirmar que todos os estudos reunidos pelas revisões sejam recentes.
 
-Foram reconferidas em 18/10/2026 as fontes primárias acima indicadas como consultadas nesta revisão. Isso não é declaração de leitura integral de todos os artigos nem auditoria completa de retratações. As limitações bibliográficas anteriores continuam válidas.
+A linguagem foi adaptada a leitores sem formação em computação: Java é apresentado como linguagem de instruções; objeto, como uma conta criada no exemplo; saldo, como um dado guardado; UML, como notação de desenho. Termos como JVM, alias, traces, snapshots e nomes linked/plain foram retirados do corpo principal. Detalhes de reprodução continuam no apêndice técnico.
+
+O mapa anterior de ABCD continua a orientar a escrita, com nova base: Johannesson e Perjons 2021 no método, Lu e Alexandru 2023 nas ferramentas, Rexigel et al. 2024 na combinação de formas de apresentação, Sibia et al. 2026 nas diferenças de uso e Yusuf e Noor 2023 nos limites da literatura. ABCD e Feynman permanecem escolhas editoriais, sem alegação de validação experimental.
 
 ## Critérios de revisão e estado
 

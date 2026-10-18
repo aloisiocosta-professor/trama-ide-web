@@ -40,3 +40,5 @@ Aceite final somente com a issue principal e todos os descendentes fechados como
 Prazo: 31/10/2026. [Requisitos do modelo e cronograma](entrega-integrador-2026-10.md). [Versão de revisão em Word](../../paper/projeto-integrador-versao-revisao.docx). Identificação e revisão pelo autor/professor pendentes; não é declaração de aprovação.
 
 Revisão de escrita em 18/10/2026: [ABCD e Feynman](escrita-abcd-feynman.md), [seções revisadas](../../paper/secoes-revisadas-abcd.md) e DOCX atualizado. Citações indiretas, evidências e limites preservados; versão ainda em revisão.
+
+Atualização de linguagem e literatura em 18/10/2026: o DOCX usa cinco fontes de 2021–2026 dentro do recorte 2016–2026 e explica os termos para leitores sem formação em computação. Ver [matriz recente](matriz-fontes-2016-2026.csv). Os materiais históricos preservam suas referências originais.

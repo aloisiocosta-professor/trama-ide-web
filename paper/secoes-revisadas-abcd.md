@@ -1,75 +1,69 @@
-# Seções revisadas do Projeto Integrador
+# Seções revisadas para leitores sem formação em computação
 
-Revisão editorial de 18/10/2026. Roteiro de escrita em docs/research/escrita-abcd-feynman.md. Identificação e revisão acadêmica pendentes.
+Recorte bibliográfico de 2016 a 2026, com prioridade para 2021 a 2026. Cinco fontes selecionadas de 2021 a 2026. Revisão de 18/10/2026.
 
 ## 1 INTRODUÇÃO
 
-Relacionar uma classe aos objetos criados durante a execução é o problema técnico deste Projeto Integrador. Kölling et al. (2003) descrevem o BlueJ como um ambiente de ensino que aproxima classes e interação com objetos. No exemplo deste trabalho, a classe BankAccount descreve o que uma conta pode fazer; cada conta criada é um objeto, com seu próprio saldo. Essa distinção orienta a construção de um demonstrador que torna essas relações observáveis.
+Este Projeto Integrador apresenta uma ferramenta visual para acompanhar o que um programa faz com os dados. O exemplo usa duas contas fictícias, sem dinheiro real ou dados pessoais. Lu e Alexandru (2023) analisam ferramentas de diagramas para o ensino de desenvolvimento de programas. Neste trabalho, o desenho ajuda a apresentar a estrutura da conta; as demais partes da tela mostram as instruções escritas em Java e os valores das contas.
 
-As três vistas do demonstrador apresentam informações diferentes sobre o mesmo exemplo. Ainsworth (2006) propõe considerar o desenho das representações, suas funções e as tarefas necessárias para relacioná-las. Aqui, o cartão UML resume a estrutura, o código mostra como a operação foi escrita e a vista de objetos mostra os valores registrados. O projeto usa destaques para indicar a correspondência entre essas vistas, sem presumir que exibi-las juntas garanta compreensão.
+Java é a linguagem usada para escrever as instruções do exemplo. Cada conta criada pelo programa é chamada de objeto; seu saldo é um dos dados guardados nela. Rexigel et al. (2024) apontam que combinar diferentes formas de apresentar um conteúdo pode trazer benefícios em certas condições, especialmente quando existe apoio para relacioná-las. Por isso, a ferramenta destaca a relação entre desenho, instruções e valores, sem presumir que esses destaques garantam aprendizagem.
 
-A pergunta deste recorte é: como implementar correspondências entre UML, código Java e estado dos objetos e verificar seu funcionamento nos cenários definidos? O demonstrador já permite executar operações e comparar estados antes e depois das chamadas. Por exemplo, um depósito deve alterar o saldo da conta que recebeu a operação, mantendo o saldo de outra instância independente. Esse comportamento pode ser conferido por testes de software com valores conhecidos.
-
-O alcance da entrega é técnico e documental. As evidências do projeto identificam verificações de software e nenhum participante na avaliação. Portanto, observar a mudança correta de saldo demonstra o comportamento do cenário exercitado, mas não demonstra que estudantes aprenderam com a ferramenta. O trabalho apresenta a implementação, seus fundamentos e seus limites; a avaliação educacional permanece uma etapa futura.
+A pergunta do trabalho é: como construir uma ferramenta que mostre a relação entre as instruções de um programa e a mudança dos dados de contas de exemplo, e como conferir seu funcionamento? Um caso simples orienta essa pergunta: uma conta começa com 100, recebe 25 e deve passar a 125, enquanto a outra mantém seu valor. Os registros dos testes permitem conferir esse comportamento. O resultado disponível é uma demonstração de funcionamento; ainda não houve avaliação com estudantes.
 
 ## 1.2 METODOLOGIA
 
-O trabalho combina levantamento bibliográfico exploratório, análise documental e desenvolvimento com verificação técnica. Hevner et al. (2004) discutem construção e avaliação de artefatos. Aqui, construir é implementar o demonstrador; verificar é comparar o comportamento com resultados esperados. Essa aproximação não conclui a avaliação educacional.
+O trabalho reuniu consulta a publicações, análise de ferramentas descritas nessas fontes, construção do programa e testes de funcionamento. Johannesson e Perjons (2021) apresentam um roteiro de pesquisa que distingue definir o problema, estabelecer requisitos, desenvolver, demonstrar e avaliar uma solução. Aqui, isso significa decidir o que a ferramenta deve mostrar e conferir se ela realiza as operações previstas. Essa aproximação não equivale a comprovar seu valor educacional.
 
-O levantamento reuniu fontes sobre BlueJ, visualização de programas e múltiplas representações, registradas na matriz de evidências. Foram consultadas seções de originais e, em algumas fontes, somente resumos e metadados. Esses materiais orientaram as decisões do demonstrador. A busca exploratória não foi uma revisão sistemática nem comprova novidade ampla.
+A busca bibliográfica foi exploratória, com recorte de publicações de 2016 até 18 de outubro de 2026 e prioridade para 2021–2026. Foram selecionadas cinco fontes de 2021, 2023, 2024 e 2026 sobre visualização, diagramas e método de pesquisa. Consultaram-se os trechos acessíveis e os resumos identificados no registro de fontes. Não se realizou uma revisão sistemática nem leitura integral de todas as obras.
 
-A implementação utiliza BankAccount, com saldo decimal, depósito, retirada e consulta. Os arquivos-fonte mostram um executor com objetos reais em Java e registros anteriores e posteriores às chamadas. Assim, conserva-se o estado de antes e de depois da operação. Marcadores relacionam membros a regiões de código, sem rastrear cada instrução ou aceitar Java arbitrário.
+Na construção, foram usadas contas fictícias para representar objetos, isto é, elementos que o programa cria e cujos dados pode alterar. A tela reúne um desenho da estrutura da conta, as instruções escritas e os saldos registrados. Existem duas versões de apresentação: uma acrescenta destaques que relacionam essas partes e a outra omite os destaques. Ambas usam as mesmas operações, o que permite conferir seu comportamento e preparar uma comparação futura.
 
-A verificação usa cenários com valores conhecidos. No teste gráfico preservado, uma conta passa de 100 para 125 após receber 25, enquanto outra mantém 20. Também foram conferidas referências compartilhadas, rejeições, equivalência do executor e exportação, conforme o Apêndice A. Cada aprovação sustenta apenas o comportamento exercitado.
-
-Os logs e resultados identificam as versões verificadas. A execução inicial registrou 28 verificações Java e cinco testes Python aprovados; outra incluiu nove verificações gráficas aprovadas, com zero participantes. Esses números contam testes do programa, não alunos. Aprendizagem, usabilidade e interesse comercial permanecem sem avaliação própria.
+Os testes compararam valores esperados e observados. O caso de depósito verificou a passagem de 100 para 125 e a manutenção de 20 na outra conta. Também foram conferidos dois nomes para a mesma conta, operações que devem ser recusadas e a gravação dos registros em arquivo. A execução inicial aprovou 28 verificações Java e cinco testes do gerador; outra aprovou nove verificações da tela. O Apêndice A identifica essas evidências. Nenhum desses números representa quantidade de estudantes.
 
 ## 2 REFERENCIAL TEÓRICO
 
-### 2.1 Classes objetos e referências
+### 2.1 Desenhos e instruções sobre o mesmo exemplo
 
-A distinção entre classe e objeto orienta o exemplo adotado. Kölling et al. (2003) descrevem recursos do BlueJ que permitem criar objetos e interagir com eles. Para acompanhar o demonstrador, basta distinguir três elementos: a classe descreve a estrutura e as operações, o objeto é uma conta criada e o estado é o conjunto de valores dessa conta. Assim, duas contas da mesma classe podem ter saldos diferentes sem contradição.
+Apresentar a mesma situação de mais de uma forma pode apoiar sua compreensão, mas exige cuidado. Rexigel et al. (2024), ao reunir estudos de educação em ciências, tecnologia, engenharia e matemática, encontraram benefícios condicionados à forma de apoio oferecida. No projeto, o desenho resume o que uma conta contém, as instruções mostram a operação e os saldos mostram seu resultado. Essa aplicação é uma escolha de desenvolvimento, não uma reprodução dos resultados daqueles estudos.
 
-Uma referência permite acessar um objeto e não deve ser confundida com ele. Os testes do projeto distinguem instâncias independentes de referências compartilhadas. Dois nomes podem apontar para a mesma conta; nesse caso, consultar qualquer um deles revela a mudança realizada no único objeto. Esse exemplo explica por que contar nomes não basta para contar objetos e por que a identidade precisa ser verificada.
+O desenho segue uma notação chamada UML, usada para representar partes de um programa. Lu e Alexandru (2023) estudam ferramentas dessa notação para cursos superiores e discutem recursos de elaboração de diagramas e colaboração. Aqui, o desenho é limitado a uma conta de exemplo e suas operações. A fonte ajuda a situar essa escolha entre ferramentas existentes; não demonstra que o nosso recurso seja inédito ou superior.
 
-### 2.2 Como relacionar as representações
+### 2.2 O que o leitor precisa distinguir
 
-Relacionar as vistas faz parte da tarefa de compreender o exemplo. Ainsworth (2006) examina fatores que influenciam o uso de múltiplas representações e as tarefas necessárias para interpretá-las. No demonstrador, a pergunta concreta é qual trecho do código e qual objeto correspondem ao método selecionado no cartão UML. Os destaques foram projetados para indicar essa relação; sua utilidade educacional ainda precisa ser avaliada.
+Para entender o exemplo, é suficiente começar por três ideias: descrição, conta criada e valor guardado. A descrição reúne os dados e as operações possíveis; cada conta criada é um objeto; o saldo é um valor desse objeto. Nos testes do projeto, duas contas separadas conservam saldos independentes. Assim, alterar uma conta não deve mudar a outra.
 
-A atividade realizada com a visualização também merece atenção. Hundhausen, Douglas e Stasko (2002), em uma síntese de estudos de visualização de algoritmos, discutem a importância do modo como os estudantes utilizam esses recursos. O demonstrador permite registrar uma previsão, executar uma operação e explicar o que mudou. Essa sequência é uma decisão de projeto inspirada na literatura, sem transferência automática dos resultados daqueles estudos para esta ferramenta.
+Também pode haver dois nomes para a mesma conta. Nesse caso, não existem duas contas separadas: consultar qualquer um dos nomes permite observar o saldo do mesmo objeto. Os testes verificam essa situação e a comparam com a criação de contas independentes. Esse contraste torna a explicação concreta e delimita o comportamento que a ferramenta apresenta.
 
-### 2.3 Antecedentes e contribuição delimitada
+### 2.3 Por que a utilidade precisa ser investigada
 
-A visualização da execução de programas possui antecedentes. Moreno et al. (2004) apresentam o Jeliot 3, e Gestwicki e Jayaraman (2004) descrevem o JIVE, associado à visualização em Java. Essas descrições situam o demonstrador em uma área já existente. Portanto, a contribuição candidata deve ser examinada por suas escolhas específicas e evidências, sem anunciar uma integração inédita apenas por reunir diagrama e execução.
+Mostrar várias partes de um programa na tela não garante que todas sejam utilizadas. Sibia et al. (2026) investigaram o uso de visualizações por universitários que já haviam cursado disciplinas introdutórias e identificaram diferenças nas formas de recorrer a esses apoios. Isso orienta uma pergunta para o nosso projeto: os destaques seriam úteis ao público pretendido? Como esse público ainda não foi avaliado, a resposta permanece aberta.
 
-A escolha específica implementada é oferecer duas condições visuais sobre o mesmo executor. Os fontes e testes preservados mostram as condições linked, com destaques, e plain, sem esse apoio adicional. Em termos simples, muda a indicação visual de correspondência, enquanto as operações e os estados esperados permanecem equivalentes nos cenários testados. Essa organização prepara uma comparação futura, mas não constitui um estudo realizado com estudantes.
+Os resultados de outras pesquisas também não são uniformes. Yusuf e Noor (2023), em um mapeamento sobre animação de programas, relatam resultados variados e maior concentração de estudos no ensino superior. Portanto, um resultado favorável em outro curso não pode ser tratado como resultado deste Projeto Integrador. Será necessário observar o uso da ferramenta no contexto em que ela venha a ser aplicada.
 
-### 2.4 Evidências e alcance das afirmações
+### 2.4 Funcionamento e aprendizagem são resultados distintos
 
-A avaliação deve corresponder ao resultado que se pretende afirmar. Hevner et al. (2004) discutem a avaliação de artefatos no contexto de pesquisa em Sistemas de Informação. Aqui, conferir que uma conta passa de 100 para 125 verifica uma operação; verificar aprendizagem exigiria observar a compreensão de pessoas por um procedimento adequado. Essa diferença delimita a interpretação dos resultados disponíveis.
+Demonstrar uma solução e avaliar seus resultados são atividades que precisam ser explicitadas. Johannesson e Perjons (2021) distinguem essas atividades em seu roteiro de pesquisa. Neste trabalho, conferir que 100 mais 25 resulta em 125 mostra o funcionamento de uma operação. Para investigar aprendizagem, seria preciso verificar o que as pessoas conseguem explicar ou fazer após usar a ferramenta.
 
-A comunicação do software deve acompanhar esse alcance. Os registros técnicos comprovam comportamentos exercitados em um exemplo restrito, sem dados de aprendizagem ou de vendas. Por isso, é possível apresentar o recurso como um demonstrador de relações entre classe, código e estado de objetos Java. Afirmar que ele melhora notas, garante compreensão ou tem demanda comercial dependeria de novas evidências.
+A apresentação pública do programa deve acompanhar as evidências obtidas. Os registros disponíveis mostram testes de funcionamento, sem avaliação com estudantes e sem pesquisa de vendas. É possível apresentar o recurso como uma ferramenta visual para acompanhar contas de exemplo. Afirmar que ele melhora notas ou desperta interesse de compra dependeria de dados que ainda não foram coletados.
 
 ## 3 CONSIDERAÇÕES FINAIS
 
-Foi desenvolvido um demonstrador que relaciona uma representação estrutural UML, regiões do código Java e estados de objetos. As evidências preservadas registram 28 verificações Java e cinco testes Python aprovados na execução inicial, além de nove verificações gráficas em uma versão posterior. Esses resultados permitem responder à pergunta técnica dentro dos cenários definidos. O Apêndice A identifica as versões, as execuções e os arquivos que permitem conferir essa resposta.
+Foi construída uma ferramenta que relaciona o desenho de uma conta, as instruções de um programa Java e os valores registrados durante seu funcionamento. Os testes preservados conferem operações específicas, como alterar uma conta sem mudar outra conta separada. Isso responde à pergunta técnica dentro do exemplo desenvolvido. O trabalho ainda não responde se a ferramenta facilita a aprendizagem.
 
-O exemplo central torna o resultado concreto: uma conta com saldo 100 recebe um depósito de 25 e passa a 125, enquanto outra instância mantém 20. Os testes também diferenciam duas referências para o mesmo objeto de duas instâncias independentes. Assim, o demonstrador torna observáveis relações que o texto e o código descrevem de formas diferentes. O resultado comprovado é o comportamento técnico exercitado, sem inferência de aprendizagem.
+O principal resultado pode ser explicado sem conhecer programação: quando uma conta com 100 recebe 25, seu saldo passa a 125, e outra conta mantém 20. Também foi conferida a situação em que dois nomes permitem acessar a mesma conta. A execução inicial aprovou 28 verificações Java e cinco testes do gerador; uma versão posterior aprovou nove verificações da tela. Esses resultados descrevem testes do programa, não respostas de alunos.
 
-A análise dos antecedentes impede apresentar a simples reunião de diagrama e execução como novidade ampla. A descrição do BlueJ por Kölling et al. (2003) já inclui classes e interação com objetos. O demonstrador deste projeto deve ser examinado pelas correspondências explícitas, pelas duas condições visuais e pela rastreabilidade de seus testes. Essa delimitação permite comunicar o que foi construído sem atribuir ao projeto resultados que pertencem à literatura ou que ainda não foram obtidos.
+A literatura recente justifica investigar a proposta, mas não autoriza prometer seus benefícios. Rexigel et al. (2024) destacam condições de apoio ao combinar formas de apresentação, e Sibia et al. (2026) mostram que as pessoas podem utilizar esses apoios de maneiras diferentes. Por isso, os destaques da ferramenta devem ser tratados como uma escolha a ser avaliada. O resultado de estudos externos não substitui uma avaliação própria.
 
-Permanecem limites importantes: uma classe de exemplo, mapeamento por marcadores e ausência de avaliação humana de usabilidade e aprendizagem. Os registros técnicos informam zero participantes, portanto não permitem responder se estudantes compreenderiam melhor os conceitos. A continuidade requer revisão das fontes e dos instrumentos, confirmação das condições institucionais e avaliação apropriada. Essas etapas permitirão examinar a utilidade educacional sem confundi-la com a funcionalidade demonstrada.
+O projeto permanece limitado a contas fictícias e a um conjunto pequeno de operações. Não foram avaliadas facilidade de uso, aprendizagem ou demanda comercial. A continuidade exige revisar o material com o professor, confirmar as condições de aplicação e planejar a avaliação correspondente. Essas limitações orientam os próximos passos e o alcance das conclusões.
 
 ## Referências
 
-AINSWORTH, S. DeFT: A conceptual framework for considering learning with multiple representations. Learning and Instruction, v. 16, n. 3, p. 183-198, 2006. DOI: 10.1016/j.learninstruc.2006.03.001.
+JOHANNESSON, Paul; PERJONS, Erik. A Method Framework for Design Science Research. In: JOHANNESSON, Paul; PERJONS, Erik. An Introduction to Design Science. 2. ed. Cham: Springer, 2021. p. 77–93. DOI: 10.1007/978-3-030-78132-3_4.
 
-GESTWICKI, P. V.; JAYARAMAN, B. JIVE: Java interactive visualization environment. OOPSLA '04 Conference Companion, p. 226-227, 2004. DOI: 10.1145/1028664.1028762. O registro Crossref usa o título curto JIVE; o título expandido consta do registro institucional.
+LU, Yuting; ALEXANDRU, Cristina. Systematic Review of UML Diagramming Software Tools for Higher Education Software Engineering Courses. In: CONFERENCE ON UNITED KINGDOM & IRELAND COMPUTING EDUCATION RESEARCH, 2023. Proceedings [...]. New York: ACM, 2023. art. 4, p. 1–7. DOI: 10.1145/3610969.3611123.
 
-HEVNER, A. R.; MARCH, S. T.; PARK, J.; RAM, S. Design Science in Information Systems Research. MIS Quarterly, v. 28, n. 1, 2004. DOI: 10.2307/25148625.
+REXIGEL, Eva; KUHN, Jochen; BECKER, Sebastian; MALONE, Sarah. The More the Better? A Systematic Review and Meta-Analysis of the Benefits of More than Two External Representations in STEM Education. Educational Psychology Review, v. 36, art. 124, 2024. DOI: 10.1007/s10648-024-09958-y.
 
-HUNDHAUSEN, C. D.; DOUGLAS, S. A.; STASKO, J. T. A Meta-Study of Algorithm Visualization Effectiveness. Journal of Visual Languages & Computing, v. 13, n. 3, p. 259-290, 2002. DOI: 10.1006/jvlc.2002.0237.
+SIBIA, Naaz et al. Code as Anchor, Memory and Metaphor as Support: Learner Experiences with Multi-View Visualizations. In: ACM CONFERENCE ON INTERNATIONAL COMPUTING EDUCATION RESEARCH, 2026. Proceedings [...]. New York: ACM, 2026. v. 1, p. 229–243. DOI: 10.1145/3765964.3811662.
 
-KÖLLING, M.; QUIG, B.; PATTERSON, A.; ROSENBERG, J. The BlueJ system and its pedagogy. Computer Science Education, v. 13, n. 4, p. 249-268, 2003. DOI: 10.1076/csed.13.4.249.17496.
-
-MORENO, A.; MYLLER, N.; SUTINEN, E.; BEN-ARI, M. Visualizing programs with Jeliot 3. Proceedings of the Working Conference on Advanced Visual Interfaces, p. 373-376, 2004. DOI: 10.1145/989863.989928.
+YUSUF, Abdullahi; NOOR, Norah Md. Research trends on learning computer programming with program animation: A systematic mapping study. Computer Applications in Engineering Education, v. 31, n. 6, p. 1552–1582, 2023. DOI: 10.1002/cae.22659.
