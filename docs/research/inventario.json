@@ -1,5 +1,5 @@
 {
-  "version": "0.3",
+  "version": "0.4",
   "scope": "Arquivos do projeto produzidos nesta sessão; histórico editorial e protocolo integral",
   "local_date": "2026-10-17",
   "timezone": "America/Fortaleza",
@@ -18,6 +18,11 @@
       "path": ".github/workflows/research-governance.yml",
       "sha256": "1b12828156c07ae3ae75b2616d5d137ef9f72770b38b1bc8d5788d9fc193ff0b",
       "bytes": 5019
+    },
+    {
+      "path": ".github/workflows/research-prototype.yml",
+      "sha256": "59b741b963b014706cc34015346e654256a5d4666ed870bb04581f70eba28047",
+      "bytes": 2591
     },
     {
       "path": "AGENTS.md",
@@ -60,6 +65,16 @@
       "bytes": 2308
     },
     {
+      "path": "docs/research/comparacao-ferramentas.md",
+      "sha256": "ee2d655668ed3224254e8f7e7d248787b0b15ca2abc82744d6b9704bc25f8326",
+      "bytes": 2986
+    },
+    {
+      "path": "docs/research/contribuicao.md",
+      "sha256": "22b1e7382fda7f8835973338e5cc1966ef6c4b2725ebd9bba2cda997185a2d63",
+      "bytes": 2674
+    },
+    {
       "path": "docs/research/decisoes.md",
       "sha256": "ca6f5bffbbb6e530d7de4cda5611b9b6e5087fc733f4d8e067dfabd010d386c7",
       "bytes": 1544
@@ -73,6 +88,11 @@
       "path": "docs/research/issue-hierarchy.json",
       "sha256": "7bce171d66f8b8292808865e47bf5bead8bdba9905dffed01d509a0758f1fba4",
       "bytes": 180
+    },
+    {
+      "path": "docs/research/pergunta-objetivos.md",
+      "sha256": "7eb098df5bf4c32b8b1a552d386fef1944bfc69485c99dd0f60ececc0e54a12d",
+      "bytes": 2194
     },
     {
       "path": "docs/research/produto-comunicacao.md",
@@ -95,9 +115,69 @@
       "bytes": 3537
     },
     {
+      "path": "docs/session/2026-10-17-10-execucao.md",
+      "sha256": "cc104c406952c225b5437e276ba5000b0c2b9316f941d77f03359383b2d42e27",
+      "bytes": 1395
+    },
+    {
       "path": "docs/session/2026-10-17-historico.md",
       "sha256": "894bcd7f4a7495f122b6a41232736d642e03b095a092537491d6180cb985d314",
       "bytes": 24344
+    },
+    {
+      "path": "prototype/README.md",
+      "sha256": "d0cdf93fb35ec5bcdb2c246b9b7e5fbeb069e234bf7e0c8f5b14eb8f70b81ae9",
+      "bytes": 3390
+    },
+    {
+      "path": "prototype/generate.py",
+      "sha256": "3a5213e1054ffeffa3cb6580115ee98bcf25300cb52a11aca9f4967302154cf3",
+      "bytes": 3031
+    },
+    {
+      "path": "prototype/model.json",
+      "sha256": "ae4c4ddf4c0169302563db73ab48fcdc82480edea3aacb1732c94693188b4873",
+      "bytes": 469
+    },
+    {
+      "path": "prototype/src/BankAccount.java",
+      "sha256": "9525948de63889adbd7f3cdc043fb719deef43c99d8b9f0ca17e0a017627578f",
+      "bytes": 1298
+    },
+    {
+      "path": "prototype/src/LabApp.java",
+      "sha256": "ccaab125a08bf54e5bf1b063a5f642c5cdd9fb3b078912bb07a07d9d07692f7a",
+      "bytes": 911
+    },
+    {
+      "path": "prototype/src/LabChecks.java",
+      "sha256": "b85a790f1f4f39a61a467a3e1fc71cbb9e3e5856b5796e33f1d33aa5e5727399",
+      "bytes": 5864
+    },
+    {
+      "path": "prototype/src/LabPanel.java",
+      "sha256": "5a77b8c7f4a5be366fb428562c4c224d31189ce96749b2925087484665d6ae81",
+      "bytes": 10728
+    },
+    {
+      "path": "prototype/src/SourceMap.java",
+      "sha256": "1aa1b90d6b5cbb55a253a3def7b72fe4e2b6e82c4d5a968df95740c87128eac2",
+      "bytes": 1908
+    },
+    {
+      "path": "prototype/src/TraceEngine.java",
+      "sha256": "983f9c5387bf30901cc00328be6e885afb0a6323478a7588eb83b0ec87236882",
+      "bytes": 3529
+    },
+    {
+      "path": "prototype/test_generator.py",
+      "sha256": "1ef609fd7e9356a7ddd2f5cd1765b51c028d1be56f068cd384f18afc2bde3e67",
+      "bytes": 1153
+    },
+    {
+      "path": "tools/build_research.py",
+      "sha256": "58e47a5cbfb1a7fed75f98458326716636979be2742849e1d15ee2d51767ee62",
+      "bytes": 2812
     }
   ]
 }

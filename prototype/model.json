@@ -1,0 +1,10 @@
+{
+  "class": "BankAccount",
+  "attributes": [{"name": "balance", "type": "BigDecimal", "visibility": "private"}],
+  "constructor": [{"name": "initial", "type": "BigDecimal"}],
+  "methods": [
+    {"name": "deposit", "return": "void", "parameters": [{"name": "amount", "type": "BigDecimal"}]},
+    {"name": "withdraw", "return": "void", "parameters": [{"name": "amount", "type": "BigDecimal"}]},
+    {"name": "getBalance", "return": "BigDecimal", "parameters": []}
+  ]
+}

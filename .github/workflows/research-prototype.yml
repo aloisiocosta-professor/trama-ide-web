@@ -1,0 +1,57 @@
+name: Research prototype
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+    paths:
+      - 'prototype/**'
+      - 'tools/build_research.py'
+      - '.github/workflows/research-prototype.yml'
+permissions:
+  contents: read
+jobs:
+  technical-validation:
+    if: github.repository == 'aloisiocosta-professor/trama-ide-web' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Read exact source files from PR commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        shell: python
+        run: |
+          import base64, hashlib, json, os
+          from pathlib import Path
+          import urllib.parse, urllib.request
+          repo = os.environ['GITHUB_REPOSITORY']
+          def fetch(path):
+              url = 'https://api.github.com/repos/' + repo + '/contents/' + urllib.parse.quote(path, safe='/') + '?ref=' + os.environ['HEAD_SHA']
+              request = urllib.request.Request(url, headers={'Authorization': 'Bearer ' + os.environ['GH_TOKEN'], 'Accept': 'application/vnd.github+json', 'User-Agent': 'research-validation'})
+              with urllib.request.urlopen(request, timeout=30) as response:
+                  item = json.load(response)
+              return base64.b64decode(item['content'])
+          manifest = json.loads(fetch('docs/research/inventario.json'))
+          for item in manifest['files']:
+              path = item['path']
+              if not (path.startswith('prototype/') or path == 'tools/build_research.py'):
+                  continue
+              destination = Path(path)
+              assert not destination.is_absolute() and '..' not in destination.parts
+              raw = fetch(path)
+              assert hashlib.sha256(raw).hexdigest() == item['sha256']
+              destination.parent.mkdir(parents=True, exist_ok=True)
+              destination.write_bytes(raw)
+      - name: Compile and verify actual Java objects
+        run: python3 tools/build_research.py
+      - name: Preserve technical results and rendered conditions
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6, Node.js 24
+        with:
+          name: research-technical-validation
+          path: |
+            validation/technical-results.json
+            validation/test-log.txt
+            validation/linked.png
+            validation/plain.png
+            validation/README.md
+          if-no-files-found: error
+          retention-days: 30
