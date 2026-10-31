@@ -8,7 +8,7 @@ O arquivo se identifica como modelo de Projeto Integrador de curso técnico. Iss
 
 ## Fonte e preservação
 
-Arquivo recebido: ENTREGA FINAL - PROJETO INTEGRADOR (9).docx. SHA-256 original: 845b66af999c0231eb0af8087a32c17e33d8540ac3f8d53c35f0516b9e5c21db. Cópia íntegra: paper/modelo-entrega-original.docx. Texto e cinco páginas renderizadas foram conferidos. As instruções são do modelo enviado pelo autor; não se afirma que constituam um regulamento institucional completo.
+Arquivo recebido: ENTREGA FINAL - PROJETO INTEGRADOR (9).docx. SHA-256 original: 845b66af999c0231eb0af8087a32c17e33d8540ac3f8d53c35f0516b9e5c21db. Desde a conferência de 31/10/2026, o caminho paper/modelo-entrega-original.docx mantém uma cópia com metadados pessoais removidos; o hash acima identifica o recebido, não os novos bytes publicados. Texto e imagens foram preservados; ver revisao-entrega-2026-10-31.md. Texto e cinco páginas renderizadas foram conferidos. As instruções são do modelo enviado pelo autor; não se afirma que constituam um regulamento institucional completo.
 
 ## Requisitos extraídos e critérios de aceite
 
@@ -68,3 +68,7 @@ Em 18/10/2026, as quatro seções solicitadas foram reescritas com roteiro edito
 ## Recorte temporal após reprovação
 
 Somente 2021–2026 na entrega ativa, sem referência anterior a 2016. Ver criterio-temporal-entrega.md e o índice paper/README.md. Os manuscritos preliminares com referências antigas são históricos e não devem ser entregues como a versão atual.
+
+## Conferência na data da entrega — 31/10/2026
+
+[Relatório atual](revisao-entrega-2026-10-31.md): 11 páginas, sumário, um objetivo geral, dois específicos, 18 parágrafos mapeados e referências de 2024/2026 reconferidos. Escola, curso específico, alunos, professor, cidade e revisão essencial continuam pendentes. Estado: versão para revisão, não final aprovada. A cópia pública corrente do modelo teve metadados pessoais removidos, sem alterar seu conteúdo visível; o fingerprint original foi mantido no registro. Não houve envio à instituição ou fechamento de issues.

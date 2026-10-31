@@ -1,7 +1,7 @@
 {
-  "version": "0.14",
+  "version": "0.15",
   "scope": "Arquivos do projeto produzidos nesta sessão; histórico editorial e protocolo integral",
-  "local_date": "2026-10-18",
+  "local_date": "2026-10-31",
   "timezone": "America/Fortaleza",
   "files": [
     {
@@ -46,8 +46,8 @@
     },
     {
       "path": "docs/research/README.md",
-      "sha256": "4b8bd8a006d5dc7306d88c41e1bb1651f42a54af1ea1fd03f98a281c943b7bd7",
-      "bytes": 3897
+      "sha256": "d2aaf756665ae56838afe2292524f10bb4725bc9c56b388cc2ec15c5490258aa",
+      "bytes": 4139
     },
     {
       "path": "docs/research/ROADMAP.md",
@@ -85,9 +85,19 @@
       "bytes": 2986
     },
     {
+      "path": "docs/research/completion-audit-2026-10-31.json",
+      "sha256": "7d9ab22c47c257b8825f556a495ff3c6d25f006019692a0ae238b5f271a00f6b",
+      "bytes": 1759
+    },
+    {
       "path": "docs/research/completion-audit.json",
       "sha256": "674f6317305e157c3047957f7304ca597659192dd7ba1fe415df1bcc1feb82ee",
       "bytes": 1773
+    },
+    {
+      "path": "docs/research/completion-snapshot-2026-10-31.json",
+      "sha256": "496bbd7aa1e9d6f4b9800f949cac01d33570063cafe00d59771ba30270ff370b",
+      "bytes": 5316
     },
     {
       "path": "docs/research/completion-snapshot.json",
@@ -121,8 +131,8 @@
     },
     {
       "path": "docs/research/entrega-integrador-2026-10.md",
-      "sha256": "3bd5350c53a97430b637fc3934c9d197480431eea0fc7eff7b1e4a8954ee39a6",
-      "bytes": 6865
+      "sha256": "130c6305e470a1cf6ed1607ced18f8e0f749f8f71e29c4c4d3596ced2435d167",
+      "bytes": 7676
     },
     {
       "path": "docs/research/escrita-abcd-feynman.md",
@@ -260,6 +270,11 @@
       "bytes": 3620
     },
     {
+      "path": "docs/research/evidence/template-privacy-2026-10-31.json",
+      "sha256": "0ab17c75e048d4c276ce2c81710c7cfccdda0834effd9e4401ddb656e79f5dab",
+      "bytes": 541
+    },
+    {
       "path": "docs/research/guia-autor.md",
       "sha256": "b47849b3ec3bd082c89295bfedd3a8a7053cbed6dd71388e7b114a4c7f554d8b",
       "bytes": 5868
@@ -303,6 +318,16 @@
       "path": "docs/research/protocolo-estudo.md",
       "sha256": "9f28dc01f5d530aba81a685ea1641032bc47fff1d30f91f1fc8caf3789af421f",
       "bytes": 4812
+    },
+    {
+      "path": "docs/research/revisao-entrega-2026-10-31.json",
+      "sha256": "c533c6e19b4be5c2e266a3470405583954653893e69c17ecb9f6c062d709dbd5",
+      "bytes": 3878
+    },
+    {
+      "path": "docs/research/revisao-entrega-2026-10-31.md",
+      "sha256": "192ec3f8abc567d5e7ad670f4e109d276ba24c00c00c8a5ae250a0f140d8dc70",
+      "bytes": 7102
     },
     {
       "path": "docs/research/submissao-checklist.md",
@@ -385,9 +410,14 @@
       "bytes": 4174
     },
     {
+      "path": "docs/session/2026-10-31-19-revisao-entrega.md",
+      "sha256": "c18527e80f29c7c0454fe928a5288949709b0bb04fdc7731f07b928f851f3216",
+      "bytes": 6726
+    },
+    {
       "path": "paper/README.md",
-      "sha256": "b38e536655a6f1239ebdb9fa93ab91865bd5f6e2e2c242dd978d45f16e7ea733",
-      "bytes": 1916
+      "sha256": "cdad4019e08b177c581ccab3504c617003b89417b69315d70a227668aefdc5f9",
+      "bytes": 2225
     },
     {
       "path": "paper/auditoria-paragrafos-abcd.json",
@@ -411,8 +441,8 @@
     },
     {
       "path": "paper/modelo-entrega-original.docx",
-      "sha256": "845b66af999c0231eb0af8087a32c17e33d8540ac3f8d53c35f0516b9e5c21db",
-      "bytes": 400640
+      "sha256": "7733c88653329bbdf9b9e45633aa6e30ef7671b9d19cfb1a80563da68629893c",
+      "bytes": 374774
     },
     {
       "path": "paper/paginacao-integrador.json",

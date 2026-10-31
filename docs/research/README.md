@@ -2,6 +2,8 @@
 
 ## Entrega ativa — recorte 2021–2026
 
+**Conferência de 31/10/2026:** [relatório da entrega](revisao-entrega-2026-10-31.md). Identificação e revisão essencial permanecem pendentes; não há versão final aprovada. [Estado atual das issues](completion-audit-2026-10-31.json).
+
 **Usar o [índice da entrega atual](../../paper/README.md).** O Word ativo cita somente Rexigel et al. (2024) e Sibia et al. (2026, versão dos autores). [Critério temporal vigente](criterio-temporal-entrega.md) e [conferência nos arquivos](auditoria-recorte-temporal.json). Nenhuma referência anterior a 2016 integra essa entrega. Os links históricos abaixo não representam a seleção atual.
 
 Objetivo: desenvolver e avaliar correspondências explícitas entre UML, código Java e estado dos objetos, para um artigo científico defensável. Viabilidade comercial é investigação separada.

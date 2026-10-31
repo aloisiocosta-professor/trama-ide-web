@@ -1,0 +1,153 @@
+{
+  "observed_at": "2026-10-31",
+  "timezone": "America/Fortaleza",
+  "repository": "aloisiocosta-professor/trama-ide-web",
+  "head_sha": "5974cc2f4dabec7c4e71d082447b06ce671294d2",
+  "root": {
+    "number": 1,
+    "state": "open",
+    "state_reason": null,
+    "title": "[Pesquisa] Conduzir pesquisa, artigo, defesa aplicável e publicação com critérios verificáveis",
+    "html_url": "https://github.com/aloisiocosta-professor/trama-ide-web/issues/1"
+  },
+  "descendants": [
+    {
+      "number": 2,
+      "state": "closed",
+      "state_reason": "completed",
+      "title": "[Etapa 01] Delimitar a contribuição",
+      "html_url": "https://github.com/aloisiocosta-professor/trama-ide-web/issues/2"
+    },
+    {
+      "number": 3,
+      "state": "open",
+      "state_reason": null,
+      "title": "[Etapa 02] Revisar criticamente a literatura",
+      "html_url": "https://github.com/aloisiocosta-professor/trama-ide-web/issues/3"
+    },
+    {
+      "number": 4,
+      "state": "open",
+      "state_reason": null,
+      "title": "[Etapa 03] Verificar alternativas e novidade",
+      "html_url": "https://github.com/aloisiocosta-professor/trama-ide-web/issues/4"
+    },
+    {
+      "number": 5,
+      "state": "closed",
+      "state_reason": "completed",
+      "title": "[Etapa 04] Formular pergunta e objetivos",
+      "html_url": "https://github.com/aloisiocosta-professor/trama-ide-web/issues/5"
+    },
+    {
+      "number": 6,
+      "state": "open",
+      "state_reason": null,
+      "title": "[Etapa 05] Planejar a avaliação",
+      "html_url": "https://github.com/aloisiocosta-professor/trama-ide-web/issues/6"
+    },
+    {
+      "number": 7,
+      "state": "open",
+      "state_reason": null,
+      "title": "[Etapa 06] Resolver requisitos éticos e institucionais",
+      "html_url": "https://github.com/aloisiocosta-professor/trama-ide-web/issues/7"
+    },
+    {
+      "number": 8,
+      "state": "closed",
+      "state_reason": "completed",
+      "title": "[Etapa 07] Implementar o protótipo mínimo",
+      "html_url": "https://github.com/aloisiocosta-professor/trama-ide-web/issues/8"
+    },
+    {
+      "number": 9,
+      "state": "open",
+      "state_reason": null,
+      "title": "[Etapa 08] Realizar piloto",
+      "html_url": "https://github.com/aloisiocosta-professor/trama-ide-web/issues/9"
+    },
+    {
+      "number": 10,
+      "state": "open",
+      "state_reason": null,
+      "title": "[Etapa 09] Executar estudo principal",
+      "html_url": "https://github.com/aloisiocosta-professor/trama-ide-web/issues/10"
+    },
+    {
+      "number": 11,
+      "state": "open",
+      "state_reason": null,
+      "title": "[Etapa 10] Analisar os dados",
+      "html_url": "https://github.com/aloisiocosta-professor/trama-ide-web/issues/11"
+    },
+    {
+      "number": 12,
+      "state": "open",
+      "state_reason": null,
+      "title": "[Etapa 11] Consolidar o manuscrito",
+      "html_url": "https://github.com/aloisiocosta-professor/trama-ide-web/issues/12"
+    },
+    {
+      "number": 13,
+      "state": "open",
+      "state_reason": null,
+      "title": "[Etapa 12] Auditar e preparar submissão",
+      "html_url": "https://github.com/aloisiocosta-professor/trama-ide-web/issues/13"
+    },
+    {
+      "number": 14,
+      "state": "open",
+      "state_reason": null,
+      "title": "[Governança] Preservar sessão e artefatos em PRs rastreáveis",
+      "html_url": "https://github.com/aloisiocosta-professor/trama-ide-web/issues/14"
+    },
+    {
+      "number": 16,
+      "state": "open",
+      "state_reason": null,
+      "title": "[Formação] Acompanhar o autor em cada decisão metodológica",
+      "html_url": "https://github.com/aloisiocosta-professor/trama-ide-web/issues/16"
+    },
+    {
+      "number": 17,
+      "state": "open",
+      "state_reason": null,
+      "title": "[Defesa] Preparar apresentação, arguição e correções institucionais",
+      "html_url": "https://github.com/aloisiocosta-professor/trama-ide-web/issues/17"
+    },
+    {
+      "number": 18,
+      "state": "open",
+      "state_reason": null,
+      "title": "[Submissão] Selecionar veículo e responder a pareceres",
+      "html_url": "https://github.com/aloisiocosta-professor/trama-ide-web/issues/18"
+    },
+    {
+      "number": 19,
+      "state": "open",
+      "state_reason": null,
+      "title": "[Publicação] Conferir aceite, provas e versão publicada",
+      "html_url": "https://github.com/aloisiocosta-professor/trama-ide-web/issues/19"
+    },
+    {
+      "number": 20,
+      "state": "open",
+      "state_reason": null,
+      "title": "[Encerramento] Auditar critérios, problemas residuais e conclusão",
+      "html_url": "https://github.com/aloisiocosta-professor/trama-ide-web/issues/20"
+    },
+    {
+      "number": 21,
+      "state": "closed",
+      "state_reason": "completed",
+      "title": "[Correção] Resolver cinco achados da revisão da governança",
+      "html_url": "https://github.com/aloisiocosta-professor/trama-ide-web/issues/21"
+    }
+  ],
+  "sources": [
+    "https://api.github.com/repos/aloisiocosta-professor/trama-ide-web/issues/1",
+    "https://api.github.com/repos/aloisiocosta-professor/trama-ide-web/issues/1/sub_issues?per_page=100"
+  ],
+  "limits": "Snapshot of root and its 19 direct sub-issues; not an independent scientific acceptance review."
+}

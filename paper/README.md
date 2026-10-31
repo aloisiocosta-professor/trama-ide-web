@@ -4,6 +4,8 @@
 
 ## Arquivos a revisar
 
+**Conferência atual: 31/10/2026.** [Relatório e pendências](../docs/research/revisao-entrega-2026-10-31.md). As 11 páginas e o sumário foram reconferidos; o conteúdo do Word foi mantido porque os dados de identificação e a revisão essencial continuam indisponíveis. Não é versão final aprovada.
+
 - [Word da entrega ativa](projeto-integrador-versao-revisao.docx)
 - [Texto correspondente em Markdown](secoes-revisadas-abcd.md)
 - [Auditoria dos 18 parágrafos ABCD](auditoria-paragrafos-abcd.md)
