@@ -1,0 +1,54 @@
+test_rejects_code_in_identifier (test_generator.GeneratorChecks.test_rejects_code_in_identifier) ... ok
+test_rejects_duplicate_attribute (test_generator.GeneratorChecks.test_rejects_duplicate_attribute) ... ok
+test_rejects_duplicate_parameter (test_generator.GeneratorChecks.test_rejects_duplicate_parameter) ... ok
+test_rejects_void_parameter (test_generator.GeneratorChecks.test_rejects_void_parameter) ... ok
+test_structural_contract (test_generator.GeneratorChecks.test_structural_contract) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+
+
+PASS source mapping deposit
+PASS broken source mapping rejected
+PASS distinct instances
+PASS decimal exactness
+PASS other instance unchanged
+PASS before snapshot immutable
+PASS after snapshot immutable
+PASS changed receiver
+PASS alias identity
+PASS alias changes same object
+PASS both references reflect change
+PASS withdrawal actual Java
+PASS insufficient funds
+PASS zero deposit
+PASS negative deposit
+PASS duplicate name
+PASS invalid name
+PASS negative initial state
+PASS unknown reference
+PASS unknown operation
+PASS rejected calls preserve state and successful history
+PASS getter does not mutate
+PASS A/B equal semantic states
+PASS A/B equal semantic traces
+PASS A/B visual intervention differs
+PASS response chronology preserved
+PASS offscreen render linked.png
+PASS offscreen render plain.png
+{"status":"pass","checks":28,"educational_participants":0,"scope":"deterministic technical validation only"}
+
+
+PASS UI visible frame
+PASS UI creation through buttons
+PASS UI deposit through button
+PASS UI other instance preserved
+PASS UI state view starts at readable snapshot
+PASS UI UML member label fits
+PASS UI responses through buttons
+PASS UI file chooser export
+PASS UI exported chronology and event
+
+(java:2322): dbind-WARNING **: 06:42:00.008: AT-SPI: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files

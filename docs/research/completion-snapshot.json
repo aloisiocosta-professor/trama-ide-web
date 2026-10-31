@@ -1,0 +1,126 @@
+{
+  "observed_at": "2026-10-18T06:45:25.068Z",
+  "repository": "aloisiocosta-professor/trama-ide-web",
+  "root": {
+    "number": 1,
+    "title": "[Pesquisa] Conduzir pesquisa, artigo, defesa aplicável e publicação com critérios verificáveis",
+    "state": "open",
+    "state_reason": null
+  },
+  "descendants": [
+    {
+      "number": 2,
+      "title": "[Etapa 01] Delimitar a contribuição",
+      "state": "closed",
+      "state_reason": "completed"
+    },
+    {
+      "number": 3,
+      "title": "[Etapa 02] Revisar criticamente a literatura",
+      "state": "open",
+      "state_reason": null
+    },
+    {
+      "number": 4,
+      "title": "[Etapa 03] Verificar alternativas e novidade",
+      "state": "open",
+      "state_reason": null
+    },
+    {
+      "number": 5,
+      "title": "[Etapa 04] Formular pergunta e objetivos",
+      "state": "closed",
+      "state_reason": "completed"
+    },
+    {
+      "number": 6,
+      "title": "[Etapa 05] Planejar a avaliação",
+      "state": "open",
+      "state_reason": null
+    },
+    {
+      "number": 7,
+      "title": "[Etapa 06] Resolver requisitos éticos e institucionais",
+      "state": "open",
+      "state_reason": null
+    },
+    {
+      "number": 8,
+      "title": "[Etapa 07] Implementar o protótipo mínimo",
+      "state": "closed",
+      "state_reason": "completed"
+    },
+    {
+      "number": 9,
+      "title": "[Etapa 08] Realizar piloto",
+      "state": "open",
+      "state_reason": null
+    },
+    {
+      "number": 10,
+      "title": "[Etapa 09] Executar estudo principal",
+      "state": "open",
+      "state_reason": null
+    },
+    {
+      "number": 11,
+      "title": "[Etapa 10] Analisar os dados",
+      "state": "open",
+      "state_reason": null
+    },
+    {
+      "number": 12,
+      "title": "[Etapa 11] Consolidar o manuscrito",
+      "state": "open",
+      "state_reason": null
+    },
+    {
+      "number": 13,
+      "title": "[Etapa 12] Auditar e preparar submissão",
+      "state": "open",
+      "state_reason": null
+    },
+    {
+      "number": 14,
+      "title": "[Governança] Preservar sessão e artefatos em PRs rastreáveis",
+      "state": "open",
+      "state_reason": null
+    },
+    {
+      "number": 16,
+      "title": "[Formação] Acompanhar o autor em cada decisão metodológica",
+      "state": "open",
+      "state_reason": null
+    },
+    {
+      "number": 17,
+      "title": "[Defesa] Preparar apresentação, arguição e correções institucionais",
+      "state": "open",
+      "state_reason": null
+    },
+    {
+      "number": 18,
+      "title": "[Submissão] Selecionar veículo e responder a pareceres",
+      "state": "open",
+      "state_reason": null
+    },
+    {
+      "number": 19,
+      "title": "[Publicação] Conferir aceite, provas e versão publicada",
+      "state": "open",
+      "state_reason": null
+    },
+    {
+      "number": 20,
+      "title": "[Encerramento] Auditar critérios, problemas residuais e conclusão",
+      "state": "open",
+      "state_reason": null
+    },
+    {
+      "number": 21,
+      "title": "[Correção] Resolver cinco achados da revisão da governança",
+      "state": "closed",
+      "state_reason": "completed"
+    }
+  ]
+}

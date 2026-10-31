@@ -1,0 +1,14 @@
+{
+  "original_sha256": "845b66af999c0231eb0af8087a32c17e33d8540ac3f8d53c35f0516b9e5c21db",
+  "published_sanitized_sha256": "7733c88653329bbdf9b9e45633aa6e30ef7671b9d19cfb1a80563da68629893c",
+  "visible_paragraphs_equal": true,
+  "embedded_images_equal": true,
+  "fields_removed": [
+    "creator",
+    "lastModifiedBy",
+    "custom properties when present",
+    "revision session identifiers"
+  ],
+  "history_rewritten": false,
+  "scope": "Only current public template copy; original fingerprint retained without exposing metadata values."
+}

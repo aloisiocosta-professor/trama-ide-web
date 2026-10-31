@@ -1,0 +1,117 @@
+{
+  "date": "2026-10-18",
+  "timezone": "America/Fortaleza",
+  "checks": [
+    {
+      "doi": "10.1076/csed.13.4.249.17496",
+      "title": "The BlueJ system and its pedagogy",
+      "year": 2003,
+      "result": {
+        "status": "verified",
+        "source": "crossref",
+        "matched_doi": "10.1076/csed.13.4.249.17496",
+        "diff": null,
+        "url": "https://app.cochat.ai/from/codex/verify_citation/papers/10.1076/csed.13.4.249.17496",
+        "error": null
+      }
+    },
+    {
+      "doi": "10.1016/j.learninstruc.2006.03.001",
+      "title": "DeFT: A conceptual framework for considering learning with multiple representations",
+      "year": 2006,
+      "result": {
+        "status": "verified",
+        "source": "crossref",
+        "matched_doi": "10.1016/j.learninstruc.2006.03.001",
+        "diff": null,
+        "url": "https://app.cochat.ai/from/codex/verify_citation/papers/10.1016/j.learninstruc.2006.03.001",
+        "error": null
+      }
+    },
+    {
+      "doi": "10.1006/jvlc.2002.0237",
+      "title": "A Meta-Study of Algorithm Visualization Effectiveness",
+      "year": 2002,
+      "result": {
+        "status": "verified",
+        "source": "crossref",
+        "matched_doi": "10.1006/jvlc.2002.0237",
+        "diff": null,
+        "url": "https://app.cochat.ai/from/codex/verify_citation/papers/10.1006/jvlc.2002.0237",
+        "error": null
+      }
+    },
+    {
+      "doi": "10.1145/3610969.3611123",
+      "title": "Systematic Review of UML Diagramming Software Tools for Higher Education Software Engineering Courses",
+      "year": 2023,
+      "result": {
+        "status": "verified",
+        "source": "crossref",
+        "matched_doi": "10.1145/3610969.3611123",
+        "diff": null,
+        "url": "https://app.cochat.ai/from/codex/verify_citation/papers/10.1145/3610969.3611123",
+        "error": null
+      }
+    },
+    {
+      "doi": "10.2307/25148625",
+      "title": "Design Science in Information Systems Research",
+      "year": 2004,
+      "result": {
+        "status": "verified",
+        "source": "crossref",
+        "matched_doi": "10.2307/25148625",
+        "diff": null,
+        "url": "https://app.cochat.ai/from/codex/verify_citation/papers/10.2307/25148625",
+        "error": null
+      }
+    },
+    {
+      "doi": "10.1145/1028664.1028762",
+      "title": "JIVE: Java interactive visualization environment",
+      "year": 2004,
+      "result": {
+        "status": "disputed",
+        "source": "crossref",
+        "matched_doi": "10.1145/1028664.1028762",
+        "diff": {
+          "title": {
+            "expected": "JIVE: Java interactive visualization environment",
+            "found": "JIVE",
+            "ratio": 0.157
+          }
+        },
+        "url": "https://app.cochat.ai/from/codex/verify_citation/papers/10.1145/1028664.1028762",
+        "error": null
+      }
+    }
+  ],
+  "jive_resolution": {
+    "title": "JIVE",
+    "authors": [
+      "Paul V. Gestwicki",
+      "Bharat Jayaraman"
+    ],
+    "year": 2004,
+    "status": "verified",
+    "source": "crossref",
+    "doi": "10.1145/1028664.1028762",
+    "note": "Expanded title retained in institutional record; initial title-only comparison was disputed."
+  },
+  "integrity_checks": [
+    {
+      "doi": "10.1016/j.learninstruc.2006.03.001",
+      "registry_status": "verified",
+      "retracted": false,
+      "plan": "pending"
+    },
+    {
+      "doi": "10.1145/3610969.3611123",
+      "registry_status": "verified",
+      "retracted": false,
+      "plan": "pending"
+    }
+  ],
+  "limits": "Identity verification is not full text review or exhaustive correction/retraction audit."
+}

@@ -1,0 +1,6 @@
+tipo	conteudo
+resposta	previsao | eventos=2 | Apenas ana muda
+resposta	explicacao | eventos=3 | A chamada tem receptor ana
+evento	Event[target=ana, member=constructor, argument=100.00, before={}, after={ana=State[objectId=obj1, balance=100.00]}, changed=[ana]]
+evento	Event[target=bruno, member=constructor, argument=20.00, before={ana=State[objectId=obj1, balance=100.00]}, after={ana=State[objectId=obj1, balance=100.00], bruno=State[objectId=obj2, balance=20.00]}, changed=[bruno]]
+evento	Event[target=ana, member=deposit, argument=25.00, before={ana=State[objectId=obj1, balance=100.00], bruno=State[objectId=obj2, balance=20.00]}, after={ana=State[objectId=obj1, balance=125.00], bruno=State[objectId=obj2, balance=20.00]}, changed=[ana]]
